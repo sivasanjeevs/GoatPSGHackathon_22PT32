@@ -206,6 +206,19 @@ class FleetManager:
                             self.gui.show_notification(msg)
                             self.logger.warning(msg)
         
+        # Update blocked robots
+        blocked = []
+        for robot_id in self.robots:
+            robot = self.robots[robot_id]
+            if robot.status == RobotStatus.WAITING:
+                blocked.append(robot_id)
+        
+        # Only update GUI if there are blocked robots
+        if blocked:
+            # Don't show the waiting notification at the top anymore
+            # self.gui.show_notification(f"Waiting: {', '.join(map(str, blocked))}")
+            pass  # The waiting robots will be shown in the dedicated "Waiting Robots" section
+        
         # Draw everything
         self.draw()
         
@@ -244,11 +257,6 @@ class FleetManager:
         # Draw status panel with robot information and notifications
         self.gui.draw_status_panel(list(self.robots.values()))
         
-        # Show notifications for blocked robots in the status panel
-        blocked = self.traffic_manager.get_blocked_robots()
-        if blocked:
-            self.gui.show_notification(f"Waiting: {', '.join(map(str, blocked))}")
-            
         self.gui.update()
         
     def get_robot_at_vertex(self, vertex_id: int) -> Optional[Robot]:

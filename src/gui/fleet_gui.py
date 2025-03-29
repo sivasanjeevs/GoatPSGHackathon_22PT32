@@ -12,6 +12,9 @@ class FleetGUI:
     VERTEX_COLOR = (97, 175, 239)  # Blue for vertices
     EDGE_COLOR = (152, 195, 121)  # Green for edges
     TEXT_COLOR = (229, 229, 229)  # Light gray for text
+    HEADING_COLOR = (86, 182, 194)  # Cyan for headings
+    SUBHEADING_COLOR = (171, 178, 191)  # Light blue for subheadings
+    CONTENT_COLOR = (229, 229, 229)  # Light gray for content
     CHARGER_COLOR = (255, 215, 0)  # Gold for charging stations
     CHARGER_GLOW = (255, 215, 0, 100)  # Semi-transparent gold for glow effect
     HIGHLIGHT_COLOR = (255, 0, 0)  # Red for selected robot
@@ -42,12 +45,12 @@ class FleetGUI:
         self.offset_x = 0
         self.offset_y = 0
         
-        # Fonts - using a modern font
+        # Fonts - using sans-serif
         try:
-            self.font = pygame.font.Font("assets/fonts/Roboto-Regular.ttf", 24)
-            self.small_font = pygame.font.Font("assets/fonts/Roboto-Regular.ttf", 20)
+            self.font = pygame.font.SysFont('sans-serif', 24)
+            self.small_font = pygame.font.SysFont('sans-serif', 20)
         except:
-            # Fallback to default font if custom font is not available
+            # Fallback to default font if sans-serif is not available
             self.font = pygame.font.Font(None, 24)
             self.small_font = pygame.font.Font(None, 20)
         
@@ -62,6 +65,12 @@ class FleetGUI:
         self.blocked_paths = set()
         self.selected_robot_id = None
         self.notifications = []
+        
+        # Panel spacing constants
+        self.PANEL_PADDING = 20
+        self.SECTION_SPACING = 40  # Increased from 30
+        self.ITEM_SPACING = 25    # Increased from 15
+        self.CONTENT_INDENT = 40  # New constant for content indentation
         
     def set_nav_graph(self, nav_graph):
         """Set the navigation graph and update bounds"""
@@ -253,43 +262,75 @@ class FleetGUI:
         pygame.draw.line(self.screen, self.PANEL_BORDER, 
                         (self.graph_width, 0), (self.graph_width, self.height), 2)
         
-        # Draw title with modern style
-        title = self.font.render("Robot Status", True, self.TEXT_COLOR)
-        title_rect = title.get_rect(midtop=(self.graph_width + self.panel_width // 2, 20))
+        # Current Y position for drawing
+        y = self.PANEL_PADDING + 10
+        
+        # Draw main title with modern style
+        title = self.font.render("Robot Status", True, self.HEADING_COLOR)
+        title_rect = title.get_rect(midtop=(self.graph_width + self.panel_width // 2, y))
         self.screen.blit(title, title_rect)
         
-        # Draw legend for charging stations
-        legend_y = 50
-        legend_text = self.small_font.render("Charging Stations:", True, self.TEXT_COLOR)
-        self.screen.blit(legend_text, (self.graph_width + 10, legend_y))
+        y += self.SECTION_SPACING + 10
         
+        # Draw charging stations section
+        section_title = self.font.render("Charging Stations", True, self.HEADING_COLOR)
+        self.screen.blit(section_title, (self.graph_width + self.PANEL_PADDING, y))
+        
+        y += self.ITEM_SPACING
         # Draw charging station example
-        legend_y += 25
-        pygame.gfxdraw.filled_circle(self.screen, self.graph_width + 20, legend_y, 8, self.CHARGER_COLOR)
-        pygame.gfxdraw.aacircle(self.screen, self.graph_width + 20, legend_y, 8, self.CHARGER_COLOR)
-        legend_text = self.small_font.render("Vertex E, J", True, self.TEXT_COLOR)
-        self.screen.blit(legend_text, (self.graph_width + 40, legend_y - 8))
+        pygame.gfxdraw.filled_circle(self.screen, 
+                                   self.graph_width + self.PANEL_PADDING + 10, 
+                                   y + 8, 8, self.CHARGER_COLOR)
+        pygame.gfxdraw.aacircle(self.screen, 
+                               self.graph_width + self.PANEL_PADDING + 10, 
+                               y + 8, 8, self.CHARGER_COLOR)
+        legend_text = self.small_font.render("Vertex E, J", True, self.CONTENT_COLOR)
+        self.screen.blit(legend_text, (self.graph_width + self.CONTENT_INDENT, y))
+        
+        y += self.SECTION_SPACING
         
         # Draw separator line
         pygame.draw.line(self.screen, self.PANEL_BORDER,
-                        (self.graph_width + 10, legend_y + 20),
-                        (self.width - 10, legend_y + 20), 1)
+                        (self.graph_width + self.PANEL_PADDING, y),
+                        (self.width - self.PANEL_PADDING, y), 1)
         
-        # Draw notifications section
-        notif_title = self.font.render("Notifications", True, self.TEXT_COLOR)
-        self.screen.blit(notif_title, (self.graph_width + 10, legend_y + 40))
+        y += self.SECTION_SPACING
+        
+        # Draw waiting section
+        waiting_title = self.font.render("Waiting Robots", True, self.HEADING_COLOR)
+        self.screen.blit(waiting_title, (self.graph_width + self.PANEL_PADDING, y))
+        
+        y += self.ITEM_SPACING
+        
+        # Find and display waiting robots
+        waiting_robots = [robot for robot in robots if robot.status == RobotStatus.WAITING]
+        if waiting_robots:
+            for robot in waiting_robots:
+                waiting_text = f"Robot {robot.id}: waiting"
+                text = self.small_font.render(waiting_text, True, self.CONTENT_COLOR)
+                self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
+                y += self.ITEM_SPACING
+        else:
+            text = self.small_font.render("No robots waiting", True, self.CONTENT_COLOR)
+            self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
+            y += self.ITEM_SPACING
+        
+        y += self.SECTION_SPACING
         
         # Draw separator line
         pygame.draw.line(self.screen, self.PANEL_BORDER,
-                        (self.graph_width + 10, legend_y + 80),
-                        (self.width - 10, legend_y + 80), 1)
+                        (self.graph_width + self.PANEL_PADDING, y),
+                        (self.width - self.PANEL_PADDING, y), 1)
         
-        # Draw robot information
-        robots_title = self.font.render("Robots", True, self.TEXT_COLOR)
-        self.screen.blit(robots_title, (self.graph_width + 10, legend_y + 100))
+        y += self.SECTION_SPACING
         
-        # Draw robot status information
-        y = legend_y + 140
+        # Draw robots section
+        robots_title = self.font.render("Robots", True, self.HEADING_COLOR)
+        self.screen.blit(robots_title, (self.graph_width + self.PANEL_PADDING, y))
+        
+        y += self.ITEM_SPACING + 10
+        
+        # Draw robot status information with increased spacing
         for robot in robots:
             # Draw robot status with color-coded indicators
             status_color = {
@@ -302,30 +343,31 @@ class FleetGUI:
             }.get(robot.status, robot.color)
             
             # Draw status indicator
-            pygame.gfxdraw.filled_circle(self.screen, self.graph_width + 20, y, 6, status_color)
-            pygame.gfxdraw.aacircle(self.screen, self.graph_width + 20, y, 6, status_color)
+            pygame.gfxdraw.filled_circle(self.screen, 
+                                       self.graph_width + self.PANEL_PADDING + 10, 
+                                       y + 8, 6, status_color)
+            pygame.gfxdraw.aacircle(self.screen, 
+                                   self.graph_width + self.PANEL_PADDING + 10, 
+                                   y + 8, 6, status_color)
             
             # Draw robot information
             info_text = f"Robot {robot.id}: {robot.status.value}"
-            text = self.small_font.render(info_text, True, self.TEXT_COLOR)
-            self.screen.blit(text, (self.graph_width + 40, y - 8))
+            text = self.small_font.render(info_text, True, self.SUBHEADING_COLOR)
+            self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
             
-            # Draw battery level
+            # Draw battery level with more spacing
+            y += self.ITEM_SPACING - 5
             battery_text = f"Battery: {robot.battery_level:.1f}%"
-            text = self.small_font.render(battery_text, True, self.TEXT_COLOR)
-            self.screen.blit(text, (self.graph_width + 40, y + 15))
+            text = self.small_font.render(battery_text, True, self.CONTENT_COLOR)
+            self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
             
-            y += 60
-            
-        # Draw notifications
-        y = legend_y + 120
-        for notif in self.notifications[-5:]:  # Show last 5 notifications
-            text = self.small_font.render(notif, True, self.TEXT_COLOR)
-            self.screen.blit(text, (self.graph_width + 10, y))
-            y += 25
+            y += self.ITEM_SPACING + 10  # Added extra spacing between robots
         
     def show_notification(self, message: str):
         """Show a notification message in the status panel"""
+        # Don't show waiting notifications at the top
+        if message.startswith("Waiting:"):
+            return
         notification = self.font.render(message, True, self.TEXT_COLOR)
         rect = notification.get_rect(topleft=(self.graph_width + 20, 85))
         self.screen.blit(notification, rect)
