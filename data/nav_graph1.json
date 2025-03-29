@@ -1,0 +1,65 @@
+{
+    "vertices": [
+        {
+            "id": 0,
+            "coordinates": [-4, 3],
+            "name": "A",
+            "is_charger": true
+        },
+        {
+            "id": 1,
+            "coordinates": [0, 3],
+            "name": "B",
+            "is_charger": false
+        },
+        {
+            "id": 2,
+            "coordinates": [4, 3],
+            "name": "C",
+            "is_charger": true
+        },
+        {
+            "id": 3,
+            "coordinates": [-4, 0],
+            "name": "D",
+            "is_charger": false
+        },
+        {
+            "id": 4,
+            "coordinates": [0, 0],
+            "name": "E",
+            "is_charger": false
+        },
+        {
+            "id": 5,
+            "coordinates": [4, 0],
+            "name": "F",
+            "is_charger": false
+        },
+        {
+            "id": 6,
+            "coordinates": [-4, -3],
+            "name": "G",
+            "is_charger": true
+        },
+        {
+            "id": 7,
+            "coordinates": [0, -3],
+            "name": "H",
+            "is_charger": false
+        },
+        {
+            "id": 8,
+            "coordinates": [4, -3],
+            "name": "I",
+            "is_charger": true
+        }
+    ],
+    "lanes": [
+        [0, 1], [1, 2],
+        [0, 3], [1, 4], [2, 5],
+        [3, 4], [4, 5],
+        [3, 6], [4, 7], [5, 8],
+        [6, 7], [7, 8]
+    ]
+} 
