@@ -83,6 +83,12 @@ class FleetManager:
             self.logger.warning(f"Failed to assign task - Robot {robot_id} not found")
             return False
             
+        if destination not in self.nav_graph.vertices:
+            msg = f"Destination vertex {destination} does not exist in navigation graph"
+            self.gui.show_notification(msg)
+            self.logger.warning(f"Failed to assign task - {msg}")
+            return False
+            
         robot = self.robots[robot_id]
         if robot.status not in [RobotStatus.IDLE, RobotStatus.TASK_COMPLETE]:
             msg = f"Robot {robot_id} is {robot.status.value}"
@@ -98,14 +104,17 @@ class FleetManager:
             
         # Get currently blocked edges from moving robots
         blocked_edges = set()
+        blocked_vertices = set()
         for other_robot in self.robots.values():
-            if (other_robot.id != robot_id and 
-                other_robot.status == RobotStatus.MOVING and 
-                other_robot.current_vertex is not None and 
-                other_robot.next_vertex is not None):
-                edge = (min(other_robot.current_vertex, other_robot.next_vertex),
-                       max(other_robot.current_vertex, other_robot.next_vertex))
-                blocked_edges.add(edge)
+            if other_robot.id != robot_id:
+                if (other_robot.status == RobotStatus.MOVING and 
+                    other_robot.current_vertex is not None and 
+                    other_robot.next_vertex is not None):
+                    edge = (min(other_robot.current_vertex, other_robot.next_vertex),
+                           max(other_robot.current_vertex, other_robot.next_vertex))
+                    blocked_edges.add(edge)
+                if other_robot.status not in [RobotStatus.MOVING, RobotStatus.WAITING]:
+                    blocked_vertices.add(other_robot.current_vertex)
             
         # Try to find paths avoiding blocked edges
         alternative_paths = self.nav_graph.get_alternative_paths(robot.current_vertex, destination)
@@ -115,31 +124,39 @@ class FleetManager:
             self.logger.warning(f"Failed to assign task - {msg}")
             return False
             
-        # Try each path until we find one that's available
-        path = None
+        # Score each path based on blockages and length
+        best_path = None
+        best_score = float('inf')
         for possible_path in alternative_paths:
-            # Check if destination is occupied by a non-moving robot
-            if (self.traffic_manager.is_vertex_occupied(destination, ignore_robot_id=robot_id)):
-                blocking_robot = self.get_robot_at_vertex(destination)
-                if blocking_robot and blocking_robot.status not in [RobotStatus.MOVING, RobotStatus.WAITING]:
-                    msg = "Destination is occupied by a non-moving robot"
-                    self.gui.show_notification(msg)
-                    self.logger.warning(f"Failed to assign task - {msg}")
-                    return False
+            if len(possible_path) < 2:
+                continue
                 
-            # Try to reserve this path
-            if self.traffic_manager.reserve_path(robot_id, possible_path):
-                path = possible_path
-                break
-        
-        if path is None:
+            # Count number of blocked edges and vertices in this path
+            blocked_count = 0
+            for i in range(len(possible_path) - 1):
+                v1, v2 = possible_path[i], possible_path[i + 1]
+                edge = (min(v1, v2), max(v1, v2))
+                if edge in blocked_edges:
+                    blocked_count += 1
+                if possible_path[i] in blocked_vertices:
+                    blocked_count += 1
+            
+            # Score is based on path length and number of blockages
+            # Heavily penalize paths with blockages
+            score = len(possible_path) + (blocked_count * 100)
+            
+            if score < best_score and self.traffic_manager.reserve_path(robot_id, possible_path):
+                best_score = score
+                best_path = possible_path
+                
+        if best_path is None:
             msg = "All possible paths are blocked"
             self.gui.show_notification(msg)
             self.logger.warning(f"Failed to assign task - {msg}")
             return False
             
-        # Assign the path to the robot
-        if robot.assign_task(path):
+        # Assign the best path to the robot
+        if robot.assign_task(best_path):
             msg = f"Robot {robot_id} assigned path to vertex {destination}"
             self.logger.info(msg)
             return True
