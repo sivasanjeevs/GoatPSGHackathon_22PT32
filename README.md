@@ -1,22 +1,66 @@
 # Fleet Management System
 
-A Python-based Fleet Management System for coordinating multiple robots in a shared environment. The system features real-time visualization, traffic negotiation, and collision avoidance.
+A Python-based Fleet Management System for coordinating multiple robots in a shared environment. The system features real-time visualization, traffic negotiation, and collision avoidance with an interactive GUI built using Python and Pygame.
 
 ## Features
 
-- Interactive GUI with modern dark theme
-- Real-time robot movement visualization
-- Traffic negotiation and collision avoidance
-- Dynamic robot spawning and task assignment
-- Status monitoring and notifications
-- Support for charging stations
+### Robot Management
+- **Robot Spawning**: Click on any unoccupied vertex to spawn a new robot
+- **Robot Selection**: Click on an idle or task-complete robot to select it
+- **Task Assignment**: Click on a destination vertex after selecting a robot to assign a movement task
+- **Multiple Robots**: Support for multiple robots with unique IDs and colors
+- **Robot States**:
+  - IDLE: Robot waiting for task assignment
+  - MOVING: Robot in transit between vertices
+  - WAITING: Robot temporarily stopped due to path blockage
+  - CHARGING: Robot recharging at a charging station
+  - TASK_COMPLETE: Robot finished its assigned task
+  - BATTERY_DEAD: Robot's battery depleted, needs charging
+
+### Battery System
+- **Battery Level Monitoring**: Each robot has a battery that depletes during movement
+- **Low Battery Indicator**: Visual indicator when battery level drops below 30%
+- **Automatic Charging**:
+  - Robots automatically seek nearest charging station when battery is low
+  - Charging stations marked with ⚡ symbol
+  - Visual feedback during charging process
+- **Battery Dead State**: Robots stop moving when battery depletes completely
+
+### Traffic Management
+- **Path Finding**: Automatic calculation of optimal paths between vertices
+- **Collision Avoidance**: 
+  - Prevention of robot collisions through path reservation system
+  - Robots wait when paths are blocked by other robots
+  - Only one robot can occupy a vertex at a time
+  - Only one robot can traverse an edge at a time
+- **Edge Blocking**: Visual indication of blocked paths with red X markers
+- **Alternative Paths**: System finds alternative routes when primary path is blocked
+
+### Visual Interface
+- **Interactive GUI**: Real-time visualization with modern dark theme
+- **Status Panel**: 
+  - Robot Status overview
+  - Charging Stations information
+  - Waiting Robots section
+  - Individual robot details including battery levels
+- **Visual Indicators**:
+  - Color-coded robot states
+  - Path previews
+  - Blocked path indicators
+  - Battery level bars
+  - Charging station glow effects
+  - Selection highlights with purple highlight
+  - Blue vertices for regular locations
+  - Yellow vertices for charging stations
+  - Green edges for available paths
 
 ## Requirements
 
 - Python 3.8+
-- Dependencies listed in requirements.txt
+- Pygame 2.x
+- Additional dependencies listed in requirements.txt
 
-## Running the System
+## Installation and Running
 
 1. Install dependencies:
 ```bash
@@ -30,23 +74,17 @@ python src/main.py
 
 ## Using the System
 
-1. Interacting with robots:
-   - Click on any vertex to spawn a new robot
-   - Click on a robot to select it
-   - Click on a destination vertex to assign a task to the selected robot
-   - Robots will automatically navigate while avoiding collisions
-   - The status panel on the right shows robot information
-   - Notifications appear at the top of the screen
+### Basic Controls
+1. **Left Click on Vertex**: Spawn new robot (if no robot selected) or set destination (if robot selected)
+2. **Left Click on Robot**: Select robot for task assignment
+3. **Close Window**: Exit application
 
-2. Understanding the interface:
-   - Blue vertices: Regular locations
-   - Yellow vertices: Charging stations
-   - Green edges: Available paths
-   - Purple highlight: Selected robot/vertex
-   - Unique colors for each robot
-   - Status indicators below each robot
-   - Battery indicators for charging robots
-   - Red X markers for blocked paths
+### Interface Elements
+- Status panel on the right shows detailed robot information
+- Notifications appear at the top of the screen
+- Each robot has a unique color and status indicator
+- Battery levels are shown for all robots
+- Charging stations are marked in yellow with a glow effect
 
 ## Navigation Graph
 
@@ -54,14 +92,6 @@ The system uses a JSON-based navigation graph (`data/nav_graph.json`) that defin
 - Vertices: Locations with coordinates and attributes
 - Lanes: Connections between vertices
 - Charging stations: Special vertices marked with `is_charger: true`
-
-## Traffic Management
-
-The system implements the following traffic rules:
-- Only one robot can occupy a vertex at a time
-- Only one robot can traverse an edge at a time
-- Robots automatically wait when their path is blocked
-- Real-time path updates and collision avoidance
 
 ## Project Structure
 ```
@@ -80,4 +110,22 @@ fleet_management_system/
 │   └── main.py
 ├── requirements.txt
 └── README.md
-``` 
+```
+
+## Technical Details
+- Built with Python and Pygame
+- Uses graph-based navigation system
+- Real-time path finding and collision avoidance
+- Event-driven architecture
+- Modular design with separate components for:
+  - Fleet Management
+  - Traffic Control
+  - Robot Control
+  - GUI Rendering
+  - Navigation
+  - Battery Management
+- Real-time Updates: 60 FPS update rate for smooth animation
+- Performance Optimization: 
+  - Double buffering for smooth rendering
+  - Efficient path finding algorithms
+  - Optimized collision detection 
