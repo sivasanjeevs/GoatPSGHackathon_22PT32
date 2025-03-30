@@ -2,129 +2,130 @@
 
 A Python-based Fleet Management System for coordinating multiple robots in a shared environment. The system features real-time visualization, traffic negotiation, and collision avoidance with an interactive GUI built using Python and Pygame.
 
-# first navigation graph
-![image](goat1.jpg)
+---
 
-# Second navigation graph
-![image](goat2.jpg)
+## Navigation Graphs
 
-# Third navigation graph
-![image](goat3.jpg)
+### First Navigation Graph
+![First Navigation Graph](goat1.jpg)
 
+### Second Navigation Graph
+![Second Navigation Graph](goat2.jpg)
+
+### Third Navigation Graph
+![Third Navigation Graph](goat3.jpg)
+
+---
 
 ## Features
 
 ### Robot Management
-- **Robot Spawning**: Click on any unoccupied vertex to spawn a new robot
-- **Robot Selection**: Click on an idle or task-complete robot to select it
-- **Task Assignment**: Click on a destination vertex after selecting a robot to assign a movement task
-- **Multiple Robots**: Support for multiple robots with unique IDs and colors
+- **Robot Spawning**: Click on an unoccupied vertex to spawn a robot.
+- **Robot Selection**: Click on an idle or task-complete robot to select it.
+- **Task Assignment**: Click on a destination vertex after selecting a robot.
+- **Multiple Robots**: Supports multiple robots with unique IDs and colors.
 - **Robot States**:
-  - IDLE: Robot waiting for task assignment
-  - MOVING: Robot in transit between vertices
-  - WAITING: Robot temporarily stopped due to path blockage
-  - CHARGING: Robot recharging at a charging station
-  - TASK_COMPLETE: Robot finished its assigned task
-  - BATTERY_DEAD: Robot's battery depleted, needs charging
+  - `IDLE`: Waiting for task assignment.
+  - `MOVING`: In transit between vertices.
+  - `WAITING`: Temporarily stopped due to path blockage.
+  - `CHARGING`: Recharging at a charging station.
+  - `TASK_COMPLETE`: Task successfully completed.
+  - `BATTERY_DEAD`: Battery depleted, needs charging.
 
 ### Battery System
-- **Battery Level Monitoring**: Each robot has a battery that depletes during movement
-- **Low Battery Indicator**: Visual indicator when battery level drops below 30%
+- **Battery Monitoring**: Each robot's battery depletes while moving.
+- **Low Battery Indicator**: Alerts when below 30%.
 - **Automatic Charging**:
-  - Robots automatically seek nearest charging station when battery drops below 20%
-  - If battery depletes to 0% while moving to charging station, robot stops at current position
-  - Charging stations marked with ⚡ symbol
-  - Visual feedback during charging process
-  - Robot must be manually directed to charging station if battery dies (0%)
-- **Battery Dead State**: 
-  - Robots stop moving when battery depletes completely
-  - Robot remains at the position where battery reached 0%
-  - Cannot accept new tasks until charged
+  - Robots automatically navigate to the nearest charging station when battery drops below 20%.
+  - If battery reaches 0%, the robot stops and requires manual intervention.
+  - Charging stations are marked with a ⚡ symbol.
+- **Battery Dead State**:
+  - Robot stops moving at 0% battery.
+  - Cannot accept new tasks until charged.
 
 ### Traffic Management
-- **Path Finding**: Automatic calculation of optimal paths between vertices
-- **Collision Avoidance**: 
-  - Prevention of robot collisions through path reservation system
-  - Robots wait when paths are blocked by other robots
-  - Only one robot can occupy a vertex at a time
-  - Only one robot can traverse an edge at a time
-- **Edge Blocking**: Visual indication of blocked paths with red X markers
-- **Alternative Paths**: System finds alternative routes when primary path is blocked
+- **Path Finding**: Automatic calculation of optimal paths between vertices.
+- **Collision Avoidance**:
+  - Prevents multiple robots from occupying the same vertex.
+  - Robots wait when paths are blocked.
+- **Edge Blocking**: Blocked paths indicated with red X markers.
+- **Alternative Paths**: Finds alternate routes when needed.
 
 ### Visual Interface
-- **Interactive GUI**: Real-time visualization with modern dark theme
-- **Status Panel**: 
-  - Robot Status overview
-  - Charging Stations information
-  - Waiting Robots section
-  - Individual robot details including battery levels
+- **Interactive GUI**: Real-time visualization with a modern dark theme.
+- **Status Panel**:
+  - Robot statuses and battery levels.
+  - Charging station information.
+  - Waiting robots overview.
 - **Visual Indicators**:
-  - Color-coded robot states
-  - Path previews
-  - Blocked path indicators
-  - Battery level bars
-  - Charging station glow effects
-  - Selection highlights with purple highlight
-  - Blue vertices for regular locations
-  - Yellow vertices for charging stations
-  - Green edges for available paths
+  - Color-coded robot states.
+  - Path previews and blocked path markers.
+  - Battery level bars and charging station glow effects.
+  - Selection highlights.
+  - **Vertex Colors**:
+    - Blue: Regular locations
+    - Yellow: Charging stations
+  - **Edge Colors**:
+    - Green: Available paths
 
-## Requirements
-
-- Python 3.8+
-- Pygame 2.x
-- Additional dependencies listed in requirements.txt
+---
 
 ## Installation and Running
 
-1. Install dependencies:
+### Requirements
+- Python 3.8+
+- Pygame 2.x
+- Dependencies listed in `requirements.txt`
+
+### Installation
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Run the GUI system:
+### Running the System
 ```bash
 cd src
 python main.py
 ```
 
-3. To select a specific navigation graph, use the --graph argument:
+### Selecting a Navigation Graph
 ```bash
-
 cd src
 
-# For first navigation graph
+# First navigation graph
 python main.py --graph 1
 
-# For second navigation graph
+# Second navigation graph
 python main.py --graph 2
 
-# For third navigation graph
+# Third navigation graph
 python main.py --graph 3
 ```
+*If no graph is specified, the system defaults to Graph 1.*
 
-If no graph is specified, it will default to graph 1.
+---
 
-## Using the System
+## System Usage
 
 ### Basic Controls
-1. **Left Click on Vertex**: Spawn new robot (if no robot selected) or set destination (if robot selected)
-2. **Left Click on Robot**: Select robot for task assignment
-3. **Close Window**: Exit application
+- **Left Click on Vertex**: Spawn a new robot (if none selected) or set a destination (if a robot is selected).
+- **Left Click on Robot**: Select a robot for task assignment.
+- **Close Window**: Exit the application.
 
 ### Interface Elements
-- Status panel on the right shows detailed robot information
-- Notifications appear at the top of the screen
-- Each robot has a unique color and status indicator
-- Battery levels are shown for all robots
-- Charging stations are marked in yellow with a glow effect
+- **Status Panel**: Displays robot information and notifications.
+- **Robot Indicators**: Each robot has a unique color and battery level indicator.
+- **Charging Stations**: Marked in yellow with a glow effect.
+
+---
 
 ## Navigation Graph
-
 The system uses a JSON-based navigation graph (`data/nav_graph.json`) that defines:
-- Vertices: Locations with coordinates and attributes
-- Lanes: Connections between vertices
-- Charging stations: Special vertices marked with `is_charger: true`
+- **Vertices**: Locations with coordinates and attributes.
+- **Lanes**: Connections between vertices.
+- **Charging Stations**: Special vertices marked as `is_charger: true`.
+
+---
 
 ## Project Structure
 ```
@@ -145,20 +146,25 @@ fleet_management_system/
 └── README.md
 ```
 
+---
+
 ## Technical Details
-- Built with Python and Pygame
-- Uses graph-based navigation system
-- Real-time path finding and collision avoidance
-- Event-driven architecture
-- Modular design with separate components for:
+- **Built With**: Python & Pygame
+- **Navigation**: Graph-based pathfinding
+- **Collision Avoidance**: Real-time path reservation system
+- **Architecture**: Modular with separate components for:
   - Fleet Management
   - Traffic Control
   - Robot Control
   - GUI Rendering
-  - Navigation
+  - Navigation System
   - Battery Management
-- Real-time Updates: 60 FPS update rate for smooth animation
-- Performance Optimization: 
-  - Double buffering for smooth rendering
-  - Efficient path finding algorithms
-  - Optimized collision detection 
+- **Performance Optimizations**:
+  - 60 FPS update rate for smooth animations
+  - Double buffering for efficient rendering
+  - Optimized pathfinding and collision detection
+
+---
+
+This Fleet Management System provides an interactive and efficient solution for coordinating multiple robots in a dynamic environment. 🚀
+
