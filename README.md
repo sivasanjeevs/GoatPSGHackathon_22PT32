@@ -2,13 +2,13 @@
 
 A Python-based Fleet Management System for coordinating multiple robots in a shared environment. The system features real-time visualization, traffic negotiation, and collision avoidance with an interactive GUI built using Python and Pygame.
 
-# For first navigation graph
+# first navigation graph
 ![image](goat1.jpg)
 
-# For Second navigation graph
+# Second navigation graph
 ![image](goat2.jpg)
 
-# For Third navigation graph
+# Third navigation graph
 ![image](goat3.jpg)
 
 
