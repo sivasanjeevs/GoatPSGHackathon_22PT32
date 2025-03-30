@@ -167,8 +167,6 @@ fleet_management_system/
   - Optimized pathfinding and collision detection
 
 ---
-## Video
-[Watch the Video](https://drive.google.com/file/d/141KqgvCAwYq4NQOv4zF0yPuhKTsT41gC/view?usp=sharing)
 
 This Fleet Management System provides an interactive and efficient solution for coordinating multiple robots in a dynamic environment. 🚀
 
