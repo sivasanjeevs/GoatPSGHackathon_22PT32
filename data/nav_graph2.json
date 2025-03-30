@@ -1,0 +1,105 @@
+{
+  "vertices": [
+      {
+          "id": 0,
+          "coordinates": [10.085833, -9.838552],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 1,
+          "coordinates": [9.331695, -10.635379],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 2,
+          "coordinates": [8.406808, -11.218768],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 3,
+          "coordinates": [7.282715, -11.48912],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 4,
+          "coordinates": [6.7989273, -10.734982],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 5,
+          "coordinates": [6.8558435, -9.497056],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 6,
+          "coordinates": [7.4961495, -8.714459],
+          "name": "m1",
+          "is_charger": true
+      },
+      {
+          "id": 7,
+          "coordinates": [8.734076, -9.340537],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 8,
+          "coordinates": [10.213894, -11.432204],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 9,
+          "coordinates": [11.309529, -11.915991],
+          "name": "m2",
+          "is_charger": false
+      },
+      {
+          "id": 10,
+          "coordinates": [12.234417, -11.432204],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 11,
+          "coordinates": [12.661289, -10.265424],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 12,
+          "coordinates": [11.693713, -9.411682],
+          "name": "",
+          "is_charger": false
+      },
+      {
+          "id": 13,
+          "coordinates": [10.612308, -9.112872],
+          "name": "",
+          "is_charger": false
+      }
+  ],
+  "lanes": [
+      [4, 5], [5, 4],
+      [12, 13], [13, 12],
+      [1, 2], [2, 1],
+      [9, 10], [10, 9],
+      [10, 11], [11, 10],
+      [7, 1], [1, 7],
+      [6, 7], [7, 6],
+      [11, 12], [12, 11],
+      [13, 0], [0, 13],
+      [3, 4], [4, 3],
+      [0, 1], [1, 0],
+      [8, 9], [9, 8],
+      [2, 3], [3, 2],
+      [1, 8], [8, 1],
+      [5, 6], [6, 5]
+  ]
+}

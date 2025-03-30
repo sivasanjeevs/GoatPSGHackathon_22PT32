@@ -130,6 +130,17 @@ class TrafficManager:
                     if self.is_edge_occupied(current, next_vertex, robot.id):
                         is_blocked = True
                     
+                    # Check for potential head-on collisions
+                    for other_robot in robots:
+                        if (other_robot.id != robot.id and 
+                            other_robot.status == RobotStatus.MOVING and
+                            other_robot.next_vertex is not None):
+                            # Check if robots are moving towards each other
+                            if (other_robot.current_vertex == next_vertex and 
+                                other_robot.next_vertex == current):
+                                is_blocked = True
+                                break
+                    
                     if is_blocked:
                         if robot.id not in self.waiting_robots:
                             robot.wait()

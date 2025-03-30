@@ -21,10 +21,15 @@ A Python-based Fleet Management System for coordinating multiple robots in a sha
 - **Battery Level Monitoring**: Each robot has a battery that depletes during movement
 - **Low Battery Indicator**: Visual indicator when battery level drops below 30%
 - **Automatic Charging**:
-  - Robots automatically seek nearest charging station when battery is low
+  - Robots automatically seek nearest charging station when battery drops below 20%
+  - If battery depletes to 0% while moving to charging station, robot stops at current position
   - Charging stations marked with ⚡ symbol
   - Visual feedback during charging process
-- **Battery Dead State**: Robots stop moving when battery depletes completely
+  - Robot must be manually directed to charging station if battery dies (0%)
+- **Battery Dead State**: 
+  - Robots stop moving when battery depletes completely
+  - Robot remains at the position where battery reached 0%
+  - Cannot accept new tasks until charged
 
 ### Traffic Management
 - **Path Finding**: Automatic calculation of optimal paths between vertices
@@ -71,6 +76,20 @@ pip install -r requirements.txt
 ```bash
 python src/main.py
 ```
+
+3. To select a specific navigation graph, use the --graph argument:
+```bash
+# For first navigation graph
+python src/main.py --graph 1
+
+# For second navigation graph
+python src/main.py --graph 2
+
+# For third navigation graph
+python src/main.py --graph 3
+```
+
+If no graph is specified, it will default to graph 1.
 
 ## Using the System
 

@@ -169,7 +169,7 @@ class FleetGUI:
         
         # For charging stations, add a lightning bolt symbol
         if is_charger:
-            bolt_text = self.font.render("⚡", True, self.TEXT_COLOR)
+            bolt_text = self.font.render("", True, self.TEXT_COLOR)
             bolt_rect = bolt_text.get_rect(center=(screen_pos[0], screen_pos[1]))
             self.screen.blit(bolt_text, bolt_rect)
             
