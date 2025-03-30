@@ -84,19 +84,23 @@ pip install -r requirements.txt
 
 2. Run the GUI system:
 ```bash
-python src/main.py
+cd src
+python main.py
 ```
 
 3. To select a specific navigation graph, use the --graph argument:
 ```bash
+
+cd src
+
 # For first navigation graph
-python src/main.py --graph 1
+python main.py --graph 1
 
 # For second navigation graph
-python src/main.py --graph 2
+python main.py --graph 2
 
 # For third navigation graph
-python src/main.py --graph 3
+python main.py --graph 3
 ```
 
 If no graph is specified, it will default to graph 1.
