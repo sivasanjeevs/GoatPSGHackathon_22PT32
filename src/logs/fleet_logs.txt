@@ -12804,3 +12804,1631 @@
 2025-03-30 12:43:05,628 - INFO - Spawned Robot 1 at vertex 8
 2025-03-30 12:43:06,406 - INFO - Robot 0 moved: vertex 3 -> 2
 2025-03-30 12:43:07,421 - INFO - Robot 0 moved: vertex 2 -> 9
+2025-03-30 13:00:41,573 - INFO - Fleet Management System initialized
+2025-03-30 13:00:41,615 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:00:43,210 - INFO - Spawned Robot 0 at vertex 5
+2025-03-30 13:00:44,492 - INFO - Spawned Robot 1 at vertex 8
+2025-03-30 13:00:46,132 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:00:47,132 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:00:47,844 - INFO - Robot 0 assigned path to vertex 12
+2025-03-30 13:00:48,141 - INFO - Robot 1 moved: vertex 12 -> 7
+2025-03-30 13:00:48,834 - INFO - Robot 0 moved: vertex 5 -> 11
+2025-03-30 13:00:49,146 - INFO - Robot 1 moved: vertex 7 -> 6
+2025-03-30 13:00:50,160 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:00:50,161 - INFO - Robot 1 moved: vertex 6 -> 11
+2025-03-30 13:00:50,855 - INFO - Robot 0 moved: vertex 11 -> 6
+2025-03-30 13:00:51,855 - INFO - Robot 0 moved: vertex 6 -> 7
+2025-03-30 13:00:52,872 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:00:52,873 - INFO - Robot 0 moved: vertex 7 -> 12
+2025-03-30 13:03:46,446 - INFO - Fleet Management System initialized
+2025-03-30 13:03:46,453 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:03:48,085 - INFO - Spawned Robot 0 at vertex 5
+2025-03-30 13:03:49,669 - INFO - Spawned Robot 1 at vertex 8
+2025-03-30 13:03:51,783 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:03:52,772 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:03:53,780 - INFO - Robot 1 moved: vertex 12 -> 7
+2025-03-30 13:03:54,524 - INFO - Robot 0 assigned path to vertex 12
+2025-03-30 13:03:54,785 - INFO - Robot 1 moved: vertex 7 -> 6
+2025-03-30 13:03:55,795 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:03:55,796 - INFO - Robot 1 moved: vertex 6 -> 11
+2025-03-30 13:04:02,119 - INFO - Robot 1 assigned path to vertex 8
+2025-03-30 13:04:03,111 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:04:03,844 - INFO - Robot 0 moved: vertex 5 -> 11
+2025-03-30 13:04:04,125 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:04:05,129 - INFO - Robot 0 moved: vertex 11 -> 6
+2025-03-30 13:04:05,130 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:04:06,129 - INFO - Robot 0 moved: vertex 6 -> 7
+2025-03-30 13:04:06,131 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:04:06,132 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 13:04:07,142 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:04:07,143 - INFO - Robot 0 moved: vertex 7 -> 12
+2025-03-30 13:04:12,149 - INFO - Robot 1 assigned path to vertex 3
+2025-03-30 13:04:13,137 - INFO - Robot 1 moved: vertex 8 -> 9
+2025-03-30 13:04:14,137 - INFO - Robot 1 moved: vertex 9 -> 2
+2025-03-30 13:04:15,141 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:04:15,142 - INFO - Robot 1 moved: vertex 2 -> 3
+2025-03-30 13:04:18,798 - INFO - Robot 1 assigned path to vertex 0
+2025-03-30 13:04:19,788 - INFO - Robot 1 moved: vertex 3 -> 1
+2025-03-30 13:04:20,791 - INFO - Robot 1 moved: vertex 1 -> 10
+2025-03-30 13:04:21,791 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:04:21,792 - INFO - Robot 1 moved: vertex 10 -> 0
+2025-03-30 13:04:24,467 - INFO - Robot 1 assigned path to vertex 4
+2025-03-30 13:04:25,455 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:04:25,456 - INFO - Robot 1 moved: vertex 0 -> 4
+2025-03-30 13:04:25,472 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:25,473 - INFO - Robot 1 status changed: task_complete -> charging
+2025-03-30 13:04:29,230 - INFO - Robot 1 status changed: charging -> task_complete
+2025-03-30 13:04:29,247 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,270 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,290 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,307 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,324 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,341 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,358 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,375 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,392 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,409 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,426 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,443 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,459 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,476 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,493 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,510 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,526 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,542 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,560 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,575 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,592 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,609 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,625 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,642 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,659 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,675 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,691 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,708 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,725 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,741 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,756 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,772 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,788 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,805 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,822 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,839 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,856 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,872 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,888 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,905 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,922 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,937 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,953 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,969 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:29,986 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,002 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,020 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,036 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,053 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,068 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,084 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,101 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,119 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,136 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,153 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,170 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,188 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,204 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,222 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,238 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,254 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,270 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,286 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,302 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,318 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,334 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,351 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,369 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,385 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,400 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,416 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,432 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,447 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,463 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,480 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,496 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,512 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,528 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,544 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,560 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,576 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,592 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,608 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,625 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,641 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,657 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,674 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,691 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,708 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,725 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,741 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,758 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,775 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,792 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,809 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,826 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,842 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,859 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,876 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,893 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,910 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,927 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,943 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,960 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,977 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:30,993 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,009 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,025 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,041 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,058 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,075 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,091 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,108 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,125 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,142 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,160 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,176 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,193 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,210 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,227 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,244 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,261 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,278 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,295 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,311 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,328 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,344 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,360 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,375 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,392 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,409 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,425 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,442 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,474 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,493 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,510 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,527 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,544 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,560 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,577 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,593 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,610 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,626 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,643 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,659 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,676 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,693 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,710 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,733 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,747 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,762 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,779 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,796 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,811 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,829 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,845 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,862 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,879 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,895 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,912 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,927 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,944 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,960 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,976 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:31,993 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,010 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,027 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,043 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,059 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,076 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,093 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,110 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,126 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,143 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,160 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,177 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,193 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,210 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,226 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,242 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,258 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,274 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,290 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,306 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,322 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,338 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,354 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,370 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,387 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,404 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,420 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,436 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,452 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,468 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,485 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,504 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,522 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:04:32,583 - INFO - Robot 1 assigned path to vertex 7
+2025-03-30 13:04:33,529 - INFO - Robot 1 moved: vertex 4 -> 5
+2025-03-30 13:04:34,533 - INFO - Robot 1 moved: vertex 5 -> 11
+2025-03-30 13:04:34,553 - INFO - Robot 0 assigned path to vertex 5
+2025-03-30 13:04:35,543 - INFO - Robot 0 moved: vertex 12 -> 7
+2025-03-30 13:04:35,544 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:04:36,555 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:04:36,556 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:04:37,556 - INFO - Robot 0 moved: vertex 7 -> 6
+2025-03-30 13:04:38,569 - INFO - Robot 0 moved: vertex 6 -> 11
+2025-03-30 13:04:39,581 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:04:39,581 - INFO - Robot 0 moved: vertex 11 -> 5
+2025-03-30 13:04:47,376 - INFO - Robot 1 assigned path and waiting for robots 0 to move
+2025-03-30 13:04:55,982 - INFO - Robot 0 assigned path to vertex 0
+2025-03-30 13:04:56,962 - INFO - Robot 0 moved: vertex 5 -> 4
+2025-03-30 13:04:57,965 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:04:57,965 - INFO - Robot 0 moved: vertex 4 -> 0
+2025-03-30 13:07:53,001 - INFO - Fleet Management System initialized
+2025-03-30 13:07:53,010 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:07:54,326 - INFO - Spawned Robot 0 at vertex 8
+2025-03-30 13:07:57,506 - INFO - Robot 0 assigned path to vertex 12
+2025-03-30 13:07:58,488 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:07:58,489 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:07:59,343 - INFO - Spawned Robot 1 at vertex 5
+2025-03-30 13:08:01,455 - INFO - Robot 1 assigned path and waiting for robots 0 to move
+2025-03-30 13:08:02,591 - INFO - Spawned Robot 2 at vertex 8
+2025-03-30 13:08:06,508 - INFO - Robot 2 assigned path to vertex 3
+2025-03-30 13:08:07,490 - INFO - Robot 2 moved: vertex 8 -> 9
+2025-03-30 13:08:08,502 - INFO - Robot 2 moved: vertex 9 -> 2
+2025-03-30 13:08:09,503 - INFO - Robot 2 status changed: moving -> task_complete
+2025-03-30 13:08:09,504 - INFO - Robot 2 moved: vertex 2 -> 3
+2025-03-30 13:08:15,376 - INFO - Robot 0 assigned path to vertex 2
+2025-03-30 13:08:16,365 - INFO - Robot 0 moved: vertex 12 -> 8
+2025-03-30 13:08:17,371 - INFO - Robot 0 moved: vertex 8 -> 9
+2025-03-30 13:08:18,374 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:08:18,375 - INFO - Robot 0 moved: vertex 9 -> 2
+2025-03-30 13:09:55,852 - INFO - Fleet Management System initialized
+2025-03-30 13:09:55,854 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:09:57,762 - INFO - Spawned Robot 0 at vertex 5
+2025-03-30 13:09:59,785 - INFO - Spawned Robot 1 at vertex 8
+2025-03-30 13:10:03,661 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:10:04,648 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:10:05,664 - INFO - Robot 1 moved: vertex 12 -> 7
+2025-03-30 13:10:05,895 - INFO - Robot 0 assigned path and waiting for robots 1 to move
+2025-03-30 13:10:06,678 - INFO - Robot 1 moved: vertex 7 -> 6
+2025-03-30 13:10:07,686 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:10:07,687 - INFO - Robot 1 moved: vertex 6 -> 11
+2025-03-30 13:10:11,601 - INFO - Robot 1 assigned path to vertex 7
+2025-03-30 13:10:12,591 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:10:13,604 - INFO - Robot 0 moved: vertex 5 -> 11
+2025-03-30 13:10:13,606 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:10:13,608 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:10:14,615 - INFO - Robot 0 moved: vertex 11 -> 6
+2025-03-30 13:10:16,806 - INFO - Robot 1 assigned path to vertex 3
+2025-03-30 13:10:17,787 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:10:18,791 - INFO - Robot 0 moved: vertex 6 -> 7
+2025-03-30 13:10:18,792 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 13:10:19,806 - INFO - Robot 0 moved: vertex 7 -> 12
+2025-03-30 13:10:19,806 - INFO - Robot 1 moved: vertex 8 -> 9
+2025-03-30 13:10:20,817 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:10:20,820 - INFO - Robot 0 moved: vertex 12 -> 8
+2025-03-30 13:10:20,821 - INFO - Robot 1 moved: vertex 9 -> 2
+2025-03-30 13:10:21,828 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:10:21,829 - INFO - Robot 1 moved: vertex 2 -> 3
+2025-03-30 13:10:25,304 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 13:10:26,284 - INFO - Robot 1 moved: vertex 3 -> 2
+2025-03-30 13:10:27,288 - INFO - Robot 1 moved: vertex 2 -> 9
+2025-03-30 13:10:29,487 - INFO - Robot 0 assigned path to vertex 3
+2025-03-30 13:10:30,471 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:10:31,486 - INFO - Robot 0 moved: vertex 12 -> 7
+2025-03-30 13:10:31,487 - INFO - Robot 1 moved: vertex 9 -> 8
+2025-03-30 13:10:32,487 - INFO - Robot 0 moved: vertex 7 -> 6
+2025-03-30 13:10:32,487 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:10:32,488 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:10:33,497 - INFO - Robot 0 moved: vertex 6 -> 11
+2025-03-30 13:10:34,511 - INFO - Robot 0 moved: vertex 11 -> 5
+2025-03-30 13:10:35,525 - INFO - Robot 0 moved: vertex 5 -> 4
+2025-03-30 13:10:36,537 - INFO - Robot 0 moved: vertex 4 -> 0
+2025-03-30 13:10:37,549 - INFO - Robot 0 moved: vertex 0 -> 10
+2025-03-30 13:10:38,581 - INFO - Robot 0 moved: vertex 10 -> 1
+2025-03-30 13:10:39,570 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:10:39,571 - INFO - Robot 0 moved: vertex 1 -> 3
+2025-03-30 13:12:53,613 - INFO - Fleet Management System initialized
+2025-03-30 13:12:53,615 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:12:55,430 - INFO - Spawned Robot 0 at vertex 8
+2025-03-30 13:12:57,397 - INFO - Spawned Robot 1 at vertex 11
+2025-03-30 13:13:00,615 - INFO - Robot 0 assigned path to vertex 5
+2025-03-30 13:13:01,597 - INFO - Robot 0 moved: vertex 8 -> 9
+2025-03-30 13:13:02,598 - INFO - Robot 0 moved: vertex 9 -> 2
+2025-03-30 13:13:03,526 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 13:13:03,608 - INFO - Robot 0 moved: vertex 2 -> 3
+2025-03-30 13:13:04,520 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:13:04,610 - INFO - Robot 0 moved: vertex 3 -> 1
+2025-03-30 13:13:05,531 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:13:05,611 - INFO - Robot 0 moved: vertex 1 -> 10
+2025-03-30 13:13:06,532 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:06,533 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:13:06,615 - INFO - Robot 0 moved: vertex 10 -> 0
+2025-03-30 13:13:07,619 - INFO - Robot 0 moved: vertex 0 -> 4
+2025-03-30 13:13:08,633 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:13:08,634 - INFO - Robot 0 moved: vertex 4 -> 5
+2025-03-30 13:13:11,071 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:13:12,052 - INFO - Robot 1 moved: vertex 12 -> 7
+2025-03-30 13:13:13,061 - INFO - Robot 1 moved: vertex 7 -> 6
+2025-03-30 13:13:14,066 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:14,066 - INFO - Robot 1 moved: vertex 6 -> 11
+2025-03-30 13:13:15,913 - INFO - Robot 1 assigned path to vertex 8
+2025-03-30 13:13:16,902 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:13:17,908 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:13:18,913 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:13:19,922 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:19,923 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 13:13:21,445 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 13:13:22,430 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:22,431 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:13:23,471 - INFO - Robot 1 assigned path to vertex 8
+2025-03-30 13:13:24,468 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:24,469 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 13:13:26,009 - INFO - Robot 0 assigned path to vertex 12
+2025-03-30 13:13:27,002 - INFO - Robot 0 moved: vertex 5 -> 11
+2025-03-30 13:13:28,011 - INFO - Robot 0 moved: vertex 11 -> 6
+2025-03-30 13:13:28,157 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:13:29,019 - INFO - Robot 0 moved: vertex 6 -> 7
+2025-03-30 13:13:29,136 - INFO - Robot 1 moved: vertex 8 -> 9
+2025-03-30 13:13:30,029 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:13:30,029 - INFO - Robot 0 moved: vertex 7 -> 12
+2025-03-30 13:13:30,148 - INFO - Robot 1 moved: vertex 9 -> 2
+2025-03-30 13:13:31,151 - INFO - Robot 1 moved: vertex 2 -> 3
+2025-03-30 13:13:32,063 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,065 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,080 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,081 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,097 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,099 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,116 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,119 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,136 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,137 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,152 - INFO - Robot 1 moved: vertex 3 -> 1
+2025-03-30 13:13:32,153 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,154 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,168 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,169 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,185 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,186 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,201 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,202 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,217 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,218 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,233 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,234 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,249 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,250 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,265 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,266 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,281 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,282 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,297 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,298 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,314 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,315 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,330 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,331 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,347 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,348 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,364 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,365 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,381 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,382 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,397 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,398 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,413 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,414 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,429 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,430 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,445 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,446 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,461 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,463 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,477 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,479 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,494 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,495 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,509 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,510 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,526 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,527 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,540 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,542 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,556 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,557 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,573 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,574 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,588 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,589 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,604 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,605 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,621 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,622 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,637 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,638 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,653 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,654 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,669 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,670 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,685 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,686 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,702 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,703 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,718 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,719 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,734 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,735 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,750 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,751 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,767 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,768 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,783 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,784 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,800 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,801 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,817 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,818 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,832 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,833 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,849 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,850 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,866 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,867 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,881 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,882 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,898 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,899 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,914 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,915 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,930 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,931 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,947 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,948 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,965 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,966 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,981 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,982 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:32,998 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:32,999 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,014 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,015 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,031 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,032 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,048 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,049 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,065 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,066 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,081 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,082 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,098 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,100 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,131 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,153 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,177 - INFO - Robot 1 moved: vertex 1 -> 10
+2025-03-30 13:13:33,179 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,181 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,194 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,195 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,211 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,212 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,228 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,229 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,245 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,246 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,262 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,263 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,279 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,280 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,296 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,297 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,313 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,314 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,330 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,331 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,347 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,348 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,364 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,365 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,380 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,381 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,397 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,397 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,414 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,415 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,431 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,431 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,448 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,448 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,464 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,464 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,481 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,481 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,498 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,499 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,514 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,514 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,531 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,531 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,547 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,547 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,563 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,563 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,579 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,580 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,596 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,596 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,611 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,612 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,628 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,629 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,645 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,646 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,662 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,663 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,677 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,678 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,694 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,696 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,710 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,712 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,727 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,728 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,744 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,746 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,759 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,761 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,776 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,778 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,793 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,794 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,810 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,811 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,827 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,828 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,845 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,846 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,860 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,861 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,877 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,878 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,894 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,895 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,909 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,911 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,925 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,926 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,941 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,942 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,956 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,957 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,972 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,973 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:33,988 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:33,989 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,004 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,005 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,020 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,021 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,036 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,037 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,052 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,053 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,069 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,070 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,085 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,086 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,101 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,102 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,117 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,118 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,134 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,135 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,151 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,152 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,167 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,168 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,184 - INFO - Robot 1 moved: vertex 10 -> 0
+2025-03-30 13:13:34,185 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,185 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,200 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,201 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,217 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,218 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,233 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,234 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,250 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,251 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,266 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,267 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,282 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,283 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,299 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,300 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,315 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,316 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,331 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,332 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,347 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,348 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,364 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,365 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,381 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,382 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,397 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,398 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,413 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,414 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,430 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,431 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,446 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,447 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,462 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,463 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,479 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,480 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,495 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,496 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,512 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,513 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,529 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,530 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,546 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,547 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,560 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,561 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,577 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,578 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,594 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,595 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,609 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,611 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,627 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,628 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,643 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,645 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,661 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,662 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,677 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,679 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,693 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,694 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,709 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,711 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,727 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,729 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,744 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,745 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,760 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,761 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,778 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,779 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,794 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,795 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,811 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,813 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,829 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,830 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,844 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,846 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,861 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,862 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,877 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,879 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,893 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,895 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,911 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,912 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,927 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,928 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,943 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,945 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,961 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,962 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,977 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,979 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:34,992 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:34,993 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,010 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,012 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,026 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,028 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,042 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,044 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,060 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,061 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,076 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,077 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,092 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,094 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,109 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,110 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,125 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,126 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,141 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,143 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,158 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,160 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,175 - WARNING - Failed to assign task - Robot 1 is moving
+2025-03-30 13:13:35,176 - WARNING - Robot 1 cannot reach charging station
+2025-03-30 13:13:35,191 - INFO - Robot 1 moved: vertex 0 -> 4
+2025-03-30 13:13:35,193 - INFO - Robot 1 started charging at current location
+2025-03-30 13:13:39,983 - INFO - Robot 1 status changed: charging -> task_complete
+2025-03-30 13:13:39,999 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,024 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,043 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,060 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,077 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,094 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,110 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,126 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,142 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,158 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,174 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,190 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,207 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,224 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,241 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,257 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,273 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,288 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,304 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,321 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,336 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,353 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,370 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,386 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,402 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,418 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,434 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,451 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,468 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,484 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,500 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,517 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,534 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,550 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,566 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,582 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,598 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,615 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,632 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,648 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,665 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,680 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,696 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,713 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,728 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,744 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,762 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,779 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,795 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,812 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,828 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,845 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,861 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,878 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,894 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,911 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,928 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,944 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,960 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,976 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:40,992 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,009 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,025 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,042 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,058 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,074 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,090 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,106 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,122 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,138 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,154 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,170 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,202 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,219 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,235 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,252 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,268 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,284 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,300 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,316 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,332 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,348 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,364 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,380 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,397 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,414 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,430 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,446 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,462 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,478 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,494 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,511 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,527 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,543 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,559 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,576 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,593 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,609 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,626 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,643 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,659 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,676 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,693 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,709 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,726 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,743 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,758 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,775 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,792 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,808 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,825 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,842 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,859 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,876 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,893 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,909 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,927 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,943 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,959 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,976 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:41,992 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,008 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,025 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,042 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,058 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,075 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,092 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,108 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,125 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,142 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,159 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,176 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,193 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,210 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,227 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,244 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,261 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,278 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,295 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,311 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,327 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,344 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,360 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,376 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,392 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,409 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,426 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,442 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,459 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,475 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,492 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,508 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,524 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,540 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,557 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,573 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,588 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,604 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,620 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,636 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,652 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,668 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,685 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,701 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,718 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,735 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,752 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,769 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,785 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,802 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,818 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,834 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,850 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,867 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,884 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,901 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,917 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,933 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,949 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,965 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,981 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:42,997 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,013 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,030 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,046 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,062 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,078 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,093 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,110 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,127 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,142 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,159 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,176 - INFO - Robot 1 started charging at vertex 4
+2025-03-30 13:13:43,193 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:13:44,178 - INFO - Robot 1 moved: vertex 4 -> 5
+2025-03-30 13:13:45,180 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:45,181 - INFO - Robot 1 moved: vertex 5 -> 11
+2025-03-30 13:13:50,212 - INFO - Robot 1 assigned path to vertex 8
+2025-03-30 13:13:51,202 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:13:52,216 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:13:53,330 - INFO - Robot 0 assigned path to vertex 11
+2025-03-30 13:13:54,316 - INFO - Robot 0 moved: vertex 12 -> 8
+2025-03-30 13:13:55,323 - INFO - Robot 0 moved: vertex 8 -> 9
+2025-03-30 13:13:55,324 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:13:56,332 - INFO - Robot 0 moved: vertex 9 -> 2
+2025-03-30 13:13:56,333 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:13:56,334 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 13:13:57,237 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,238 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,254 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,255 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,272 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,273 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,288 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,290 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,306 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,307 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,322 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,323 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,339 - INFO - Robot 0 moved: vertex 2 -> 3
+2025-03-30 13:13:57,340 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,341 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,356 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,357 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,372 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,373 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,389 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,390 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,406 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,407 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,423 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,424 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,440 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,441 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,457 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,458 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,474 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,475 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,491 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,492 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,507 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,508 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,523 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,524 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,540 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,541 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,557 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,558 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,572 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,573 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,589 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,590 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,606 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,607 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,622 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,623 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,639 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,640 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,656 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,657 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,671 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,673 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,689 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,690 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,706 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,707 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,721 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,722 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,738 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,739 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,756 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,757 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,772 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,773 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,789 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,790 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,806 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,807 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,821 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,823 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,839 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,840 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,855 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,856 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,871 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,872 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,888 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,890 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,906 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,907 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,923 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,924 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,939 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,940 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,956 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,957 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,973 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,974 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:57,990 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:57,991 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,007 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,008 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,024 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,025 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,041 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,042 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,057 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,058 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,074 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,075 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,091 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,092 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,107 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,108 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,124 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,125 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,141 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,142 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,158 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,159 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,174 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,175 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,191 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,192 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,208 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,209 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,225 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,226 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,241 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,242 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,259 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,260 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,275 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,276 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,292 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,293 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,309 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,310 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,325 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,326 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,342 - INFO - Robot 0 moved: vertex 3 -> 1
+2025-03-30 13:13:58,343 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,343 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,359 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,359 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,375 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,376 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,392 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,393 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,407 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,408 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,424 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,425 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,441 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,442 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,458 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,459 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,474 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,475 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,491 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,492 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,506 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,507 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,523 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,524 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,540 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,541 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,555 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,556 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,571 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,573 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,589 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,590 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,606 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,607 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,622 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,623 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,639 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,640 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,655 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,656 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,672 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,673 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,689 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,690 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,704 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,706 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,720 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,722 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,737 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,739 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,755 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,756 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,771 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,772 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,789 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,790 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,803 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,805 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,820 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,822 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,837 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,839 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,853 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,854 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,869 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,870 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,886 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,888 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,901 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,903 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,917 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,918 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,933 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,933 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,949 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,949 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,965 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,966 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,981 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,982 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:58,997 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:58,998 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,013 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,014 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,029 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,030 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,056 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,059 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,072 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,073 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,089 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,090 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,106 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,107 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,123 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,124 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,140 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,141 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,156 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,157 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,173 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,174 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,189 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,190 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,205 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,206 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,221 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,222 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,237 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,238 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,258 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,259 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,275 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,276 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,291 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,292 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,307 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,308 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,323 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,324 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,340 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,341 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,356 - INFO - Robot 0 moved: vertex 1 -> 10
+2025-03-30 13:13:59,357 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,357 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,373 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,373 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,389 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,389 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,405 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,405 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,421 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,422 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,438 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,439 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,453 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,455 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,470 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,472 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,487 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,489 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,503 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,505 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,520 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,522 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,536 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,538 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,553 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,555 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,570 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,572 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,587 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,589 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,604 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,605 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,619 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,620 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,635 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,637 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,652 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,654 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,667 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,668 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,683 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,684 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,699 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,700 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,716 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,717 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,732 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,733 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,748 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,749 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,763 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,764 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,779 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,780 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,796 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,797 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,812 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,813 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,828 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,830 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,844 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,845 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,861 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,862 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,878 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,879 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,895 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,896 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,911 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,912 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,928 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,929 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,944 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,945 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,961 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,962 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,976 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,977 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:13:59,992 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:13:59,993 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,010 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,011 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,027 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,028 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,043 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,044 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,060 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,061 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,077 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,078 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,093 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,094 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,109 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,110 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,125 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,126 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,141 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,142 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,158 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,159 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,174 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,175 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,190 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,191 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,206 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,207 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,223 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,224 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,239 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,240 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,256 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,257 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,272 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,273 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,289 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,290 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,305 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,306 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,323 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,324 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,338 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,340 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,355 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,356 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,371 - INFO - Robot 0 moved: vertex 10 -> 0
+2025-03-30 13:14:00,372 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,373 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,388 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,389 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,403 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,404 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,420 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,422 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,436 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,438 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,452 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,454 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,468 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,470 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,483 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,484 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,499 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,500 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,516 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,517 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,532 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,533 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,548 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,549 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,564 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,565 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,580 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,581 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,598 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,599 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,614 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,615 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,629 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,630 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,646 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,647 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,663 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,664 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,680 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,681 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,697 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,698 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,713 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,714 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,730 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,731 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,747 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,748 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,764 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,765 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,781 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,782 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,798 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,799 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,815 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,816 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,831 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,832 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,848 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,849 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,865 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,866 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,882 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,883 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,899 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,900 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:00,990 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:00,991 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,008 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,009 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,024 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,025 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,042 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,043 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,058 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,059 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,075 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,076 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,092 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,093 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,109 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,110 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,126 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,127 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,199 - WARNING - Failed to assign task - Robot 0 is moving
+2025-03-30 13:14:01,207 - WARNING - Robot 0 cannot reach charging station
+2025-03-30 13:14:01,248 - WARNING - Robot 0 task failed - battery depleted
+2025-03-30 13:14:01,249 - INFO - Robot 0 status changed: moving -> battery_dead
+2025-03-30 13:14:01,250 - WARNING - Robot 0 battery depleted at vertex 0
+2025-03-30 13:14:16,015 - INFO - Fleet Management System initialized
+2025-03-30 13:14:16,035 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:14:17,500 - INFO - Spawned Robot 0 at vertex 8
+2025-03-30 13:14:20,137 - INFO - Robot 0 assigned path to vertex 5
+2025-03-30 13:14:21,076 - INFO - Spawned Robot 1 at vertex 6
+2025-03-30 13:14:21,121 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:14:22,133 - INFO - Robot 0 moved: vertex 12 -> 7
+2025-03-30 13:14:49,053 - INFO - Fleet Management System initialized
+2025-03-30 13:14:49,062 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:14:50,949 - INFO - Spawned Robot 0 at vertex 0
+2025-03-30 13:14:52,194 - INFO - Spawned Robot 1 at vertex 4
+2025-03-30 13:14:53,475 - INFO - Spawned Robot 2 at vertex 11
+2025-03-30 13:14:55,551 - INFO - Robot 0 assigned path to vertex 5
+2025-03-30 13:14:56,538 - INFO - Robot 0 moved: vertex 0 -> 10
+2025-03-30 13:14:57,544 - INFO - Robot 0 moved: vertex 10 -> 1
+2025-03-30 13:14:58,557 - INFO - Robot 0 moved: vertex 1 -> 3
+2025-03-30 13:14:59,567 - INFO - Robot 0 moved: vertex 3 -> 2
+2025-03-30 13:15:00,573 - INFO - Robot 0 moved: vertex 2 -> 9
+2025-03-30 13:15:01,585 - INFO - Robot 0 moved: vertex 9 -> 8
+2025-03-30 13:15:02,590 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:15:03,594 - INFO - Robot 0 moved: vertex 12 -> 7
+2025-03-30 13:15:04,610 - INFO - Robot 0 moved: vertex 7 -> 6
+2025-03-30 13:15:11,960 - INFO - Robot 1 assigned path to vertex 5
+2025-03-30 13:15:12,949 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:15:12,951 - INFO - Robot 1 moved: vertex 4 -> 5
+2025-03-30 13:15:23,844 - INFO - Fleet Management System initialized
+2025-03-30 13:15:23,853 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:15:25,822 - INFO - Spawned Robot 0 at vertex 5
+2025-03-30 13:15:27,334 - INFO - Spawned Robot 1 at vertex 8
+2025-03-30 13:15:31,150 - INFO - Robot 1 assigned path to vertex 11
+2025-03-30 13:15:32,138 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:15:33,146 - INFO - Robot 1 moved: vertex 12 -> 7
+2025-03-30 13:15:33,428 - INFO - Robot 0 assigned path to vertex 12
+2025-03-30 13:15:34,149 - INFO - Robot 1 moved: vertex 7 -> 6
+2025-03-30 13:15:34,415 - INFO - Robot 0 moved: vertex 5 -> 4
+2025-03-30 13:15:35,150 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:15:35,151 - INFO - Robot 1 moved: vertex 6 -> 11
+2025-03-30 13:15:35,426 - INFO - Robot 0 moved: vertex 4 -> 0
+2025-03-30 13:15:36,437 - INFO - Robot 0 moved: vertex 0 -> 10
+2025-03-30 13:15:37,451 - INFO - Robot 0 moved: vertex 10 -> 1
+2025-03-30 13:15:38,454 - INFO - Robot 0 moved: vertex 1 -> 3
+2025-03-30 13:15:39,456 - INFO - Robot 0 moved: vertex 3 -> 2
+2025-03-30 13:15:40,114 - INFO - Spawned Robot 2 at vertex 6
+2025-03-30 13:15:40,464 - INFO - Robot 0 moved: vertex 2 -> 9
+2025-03-30 13:15:41,480 - INFO - Robot 0 moved: vertex 9 -> 8
+2025-03-30 13:15:42,486 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:15:42,488 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:15:43,908 - INFO - Robot 2 assigned path to vertex 3
+2025-03-30 13:15:44,895 - INFO - Robot 2 moved: vertex 6 -> 7
+2025-03-30 13:15:56,138 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:15:56,826 - INFO - Spawned Robot 3 at vertex 8
+2025-03-30 13:15:59,308 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:16:02,286 - INFO - Robot 3 assigned path to vertex 3
+2025-03-30 13:16:03,277 - INFO - Robot 3 moved: vertex 8 -> 9
+2025-03-30 13:16:04,289 - INFO - Robot 3 moved: vertex 9 -> 2
+2025-03-30 13:16:05,292 - INFO - Robot 3 status changed: moving -> task_complete
+2025-03-30 13:16:05,293 - INFO - Robot 3 moved: vertex 2 -> 3
+2025-03-30 13:16:11,838 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:16:18,628 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:16:20,275 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:18:11,492 - INFO - Fleet Management System initialized
+2025-03-30 13:18:11,508 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:18:12,797 - INFO - Spawned Robot 0 at vertex 8
+2025-03-30 13:18:14,299 - INFO - Spawned Robot 1 at vertex 5
+2025-03-30 13:18:16,107 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 13:18:17,105 - INFO - Robot 1 moved: vertex 5 -> 11
+2025-03-30 13:18:18,108 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:18:18,698 - INFO - Robot 0 assigned path to vertex 11
+2025-03-30 13:18:19,122 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:18:19,677 - INFO - Robot 0 moved: vertex 8 -> 9
+2025-03-30 13:18:20,126 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:18:20,127 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:18:20,690 - INFO - Robot 0 moved: vertex 9 -> 2
+2025-03-30 13:18:21,705 - INFO - Robot 0 moved: vertex 2 -> 3
+2025-03-30 13:18:22,713 - INFO - Robot 0 moved: vertex 3 -> 1
+2025-03-30 13:18:23,723 - INFO - Robot 0 moved: vertex 1 -> 10
+2025-03-30 13:18:24,732 - INFO - Robot 0 moved: vertex 10 -> 0
+2025-03-30 13:18:25,742 - INFO - Robot 0 moved: vertex 0 -> 4
+2025-03-30 13:18:26,748 - INFO - Robot 0 moved: vertex 4 -> 5
+2025-03-30 13:18:27,755 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:18:27,757 - INFO - Robot 0 moved: vertex 5 -> 11
+2025-03-30 13:18:29,660 - INFO - Robot 0 assigned path to vertex 7
+2025-03-30 13:18:30,653 - INFO - Robot 0 moved: vertex 11 -> 6
+2025-03-30 13:18:31,341 - INFO - Spawned Robot 2 at vertex 8
+2025-03-30 13:18:31,656 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:18:31,658 - INFO - Robot 0 moved: vertex 6 -> 7
+2025-03-30 13:18:34,113 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:18:38,667 - INFO - Robot 2 assigned path to vertex 3
+2025-03-30 13:18:39,663 - INFO - Robot 2 moved: vertex 8 -> 9
+2025-03-30 13:18:40,674 - INFO - Robot 2 moved: vertex 9 -> 2
+2025-03-30 13:18:41,690 - INFO - Robot 2 status changed: moving -> task_complete
+2025-03-30 13:18:41,691 - INFO - Robot 2 moved: vertex 2 -> 3
+2025-03-30 13:18:44,344 - INFO - Robot 1 assigned path to vertex 2
+2025-03-30 13:18:45,327 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 13:18:46,338 - INFO - Robot 1 moved: vertex 8 -> 9
+2025-03-30 13:18:47,353 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:18:47,354 - INFO - Robot 1 moved: vertex 9 -> 2
+2025-03-30 13:18:49,085 - INFO - Spawned Robot 3 at vertex 0
+2025-03-30 13:18:50,581 - INFO - Spawned Robot 4 at vertex 4
+2025-03-30 13:18:51,541 - INFO - Spawned Robot 5 at vertex 11
+2025-03-30 13:18:54,037 - INFO - Robot 3 assigned path to vertex 5
+2025-03-30 13:18:55,020 - INFO - Robot 3 moved: vertex 0 -> 10
+2025-03-30 13:18:56,025 - INFO - Robot 3 moved: vertex 10 -> 1
+2025-03-30 13:19:03,037 - INFO - Robot 4 assigned path to vertex 5
+2025-03-30 13:19:03,985 - INFO - Robot 4 status changed: moving -> task_complete
+2025-03-30 13:19:03,986 - INFO - Robot 4 moved: vertex 4 -> 5
+2025-03-30 13:19:11,205 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 13:19:12,196 - INFO - Robot 1 moved: vertex 2 -> 9
+2025-03-30 13:19:13,198 - INFO - Robot 1 moved: vertex 9 -> 8
+2025-03-30 13:19:14,200 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:19:14,201 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 13:19:18,836 - INFO - Spawned Robot 6 at vertex 8
+2025-03-30 13:19:21,484 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:19:24,759 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:35:41,977 - INFO - Fleet Management System initialized
+2025-03-30 13:35:41,980 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:35:44,176 - INFO - Spawned Robot 0 at vertex 8
+2025-03-30 13:35:47,070 - INFO - Spawned Robot 1 at vertex 5
+2025-03-30 13:35:49,159 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 13:35:50,150 - INFO - Robot 1 moved: vertex 5 -> 11
+2025-03-30 13:35:51,166 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 13:35:51,776 - INFO - Robot 0 assigned path to vertex 11
+2025-03-30 13:35:52,171 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:35:52,758 - INFO - Robot 0 moved: vertex 8 -> 9
+2025-03-30 13:35:53,182 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:35:53,182 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 13:35:53,760 - INFO - Robot 0 moved: vertex 9 -> 2
+2025-03-30 13:35:54,762 - INFO - Robot 0 moved: vertex 2 -> 3
+2025-03-30 13:35:55,776 - INFO - Robot 0 moved: vertex 3 -> 1
+2025-03-30 13:35:56,779 - INFO - Robot 0 moved: vertex 1 -> 10
+2025-03-30 13:35:57,781 - INFO - Robot 0 moved: vertex 10 -> 0
+2025-03-30 13:35:57,829 - INFO - Spawned Robot 2 at vertex 4
+2025-03-30 13:36:07,609 - INFO - Fleet Management System initialized
+2025-03-30 13:36:07,624 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:36:09,420 - INFO - Spawned Robot 0 at vertex 1
+2025-03-30 13:36:11,490 - INFO - Spawned Robot 1 at vertex 6
+2025-03-30 13:36:14,602 - INFO - Robot 0 assigned path to vertex 7
+2025-03-30 13:36:15,593 - INFO - Robot 0 moved: vertex 1 -> 3
+2025-03-30 13:36:16,602 - INFO - Robot 0 moved: vertex 3 -> 2
+2025-03-30 13:36:17,604 - INFO - Robot 0 moved: vertex 2 -> 9
+2025-03-30 13:36:18,604 - INFO - Robot 0 moved: vertex 9 -> 8
+2025-03-30 13:36:19,620 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:36:20,636 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:36:20,637 - INFO - Robot 0 moved: vertex 12 -> 7
+2025-03-30 13:36:41,883 - INFO - Fleet Management System initialized
+2025-03-30 13:36:41,892 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 13:36:47,710 - INFO - Spawned Robot 0 at vertex 1
+2025-03-30 13:36:48,808 - INFO - Spawned Robot 1 at vertex 6
+2025-03-30 13:36:56,297 - INFO - Robot 0 assigned path to vertex 7
+2025-03-30 13:36:57,287 - INFO - Robot 0 moved: vertex 1 -> 3
+2025-03-30 13:36:58,299 - INFO - Robot 0 moved: vertex 3 -> 2
+2025-03-30 13:36:58,433 - INFO - Robot 1 assigned path to vertex 8
+2025-03-30 13:36:59,307 - INFO - Robot 0 moved: vertex 2 -> 9
+2025-03-30 13:36:59,425 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 13:37:00,322 - INFO - Robot 0 moved: vertex 9 -> 8
+2025-03-30 13:37:01,323 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 13:38:47,491 - INFO - Fleet Management System initialized
+2025-03-30 13:38:47,499 - INFO - Navigation graph loaded from ../data/nav_graph2.json
+2025-03-30 13:38:49,128 - INFO - Spawned Robot 0 at vertex 4
+2025-03-30 13:38:50,794 - INFO - Spawned Robot 1 at vertex 12
+2025-03-30 13:38:52,692 - INFO - Robot 1 assigned path to vertex 3
+2025-03-30 13:38:53,683 - INFO - Robot 1 moved: vertex 12 -> 13
+2025-03-30 13:38:54,692 - INFO - Robot 0 assigned path to vertex 12
+2025-03-30 13:38:54,693 - INFO - Robot 1 moved: vertex 13 -> 0
+2025-03-30 13:38:55,686 - INFO - Robot 0 moved: vertex 4 -> 3
+2025-03-30 13:38:55,703 - INFO - Robot 1 moved: vertex 0 -> 1
+2025-03-30 13:38:56,696 - INFO - Robot 0 moved: vertex 3 -> 2
+2025-03-30 13:39:54,560 - INFO - Fleet Management System initialized
+2025-03-30 13:39:54,561 - INFO - Navigation graph loaded from ../data/nav_graph2.json
+2025-03-30 13:39:59,142 - INFO - Spawned Robot 0 at vertex 1
+2025-03-30 13:40:00,491 - INFO - Spawned Robot 1 at vertex 9
+2025-03-30 13:40:02,003 - INFO - Robot 1 assigned path to vertex 7
+2025-03-30 13:40:02,990 - INFO - Robot 1 moved: vertex 9 -> 8
+2025-03-30 13:40:05,183 - INFO - Robot 0 assigned path to vertex 10
+2025-03-30 13:40:06,176 - INFO - Robot 0 moved: vertex 1 -> 0
+2025-03-30 13:40:07,187 - INFO - Robot 0 moved: vertex 0 -> 13
+2025-03-30 13:40:07,189 - INFO - Robot 1 moved: vertex 8 -> 1
+2025-03-30 13:40:08,188 - INFO - Robot 0 moved: vertex 13 -> 12
+2025-03-30 13:40:08,188 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 13:40:08,189 - INFO - Robot 1 moved: vertex 1 -> 7
+2025-03-30 13:40:09,190 - INFO - Robot 0 moved: vertex 12 -> 11
+2025-03-30 13:40:10,199 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:40:10,200 - INFO - Robot 0 moved: vertex 11 -> 10
+2025-03-30 13:40:33,409 - INFO - Robot 0 assigned path to vertex 8
+2025-03-30 13:40:34,394 - INFO - Robot 0 moved: vertex 10 -> 9
+2025-03-30 13:40:35,405 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 13:40:35,405 - INFO - Robot 0 moved: vertex 9 -> 8
+2025-03-30 13:40:36,583 - INFO - Robot 1 assigned path to vertex 9
+2025-03-30 13:40:37,563 - INFO - Robot 1 moved: vertex 7 -> 1
+2025-03-30 13:40:38,473 - INFO - Spawned Robot 2 at vertex 9
+2025-03-30 13:40:45,975 - WARNING - Failed to assign task - Could not find a valid path to destination

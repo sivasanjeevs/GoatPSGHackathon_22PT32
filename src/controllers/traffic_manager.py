@@ -43,18 +43,21 @@ class TrafficManager:
             
         # Check if next vertex is occupied by another robot
         if self.is_vertex_occupied(next_vertex, ignore_robot_id=robot_id):
-            # Check if the occupying robot is moving away
-            occupying_robot_id = self.vertex_occupancy[next_vertex]
-            if occupying_robot_id in self.reserved_paths:
-                occupying_path = self.reserved_paths[occupying_robot_id]
-                if len(occupying_path) > 1 and occupying_path[0] == next_vertex:
-                    # Robot is about to move away, so we can proceed
-                    return True
             return False
             
         # Check if edge to next vertex is occupied
         if self.is_edge_occupied(current_vertex, next_vertex, ignore_robot_id=robot_id):
             return False
+            
+        # Check for potential head-on collisions with other robots' reserved paths
+        edge = self._get_edge_key(current_vertex, next_vertex)
+        for other_id, other_path in self.reserved_paths.items():
+            if other_id != robot_id and len(other_path) > 1:
+                other_edge = self._get_edge_key(other_path[0], other_path[1])
+                if edge == other_edge:
+                    # If robots would move in opposite directions on the same edge
+                    if other_path[0] == next_vertex and other_path[1] == current_vertex:
+                        return False
             
         return True
 
@@ -119,27 +122,37 @@ class TrafficManager:
                     # Check if next vertex or edge is blocked
                     is_blocked = False
                     
-                    # Check if next vertex is occupied by a non-moving robot
+                    # Check if next vertex is occupied
                     if self.is_vertex_occupied(next_vertex, robot.id):
-                        occupying_robot_id = self.vertex_occupancy[next_vertex]
-                        occupying_robot = next((r for r in robots if r.id == occupying_robot_id), None)
-                        if occupying_robot and occupying_robot.status not in [RobotStatus.MOVING, RobotStatus.WAITING]:
-                            is_blocked = True
+                        is_blocked = True
                     
                     # Check if edge is occupied
                     if self.is_edge_occupied(current, next_vertex, robot.id):
                         is_blocked = True
                     
-                    # Check for potential head-on collisions
+                    # Check for potential head-on collisions or crossing paths
                     for other_robot in robots:
-                        if (other_robot.id != robot.id and 
-                            other_robot.status == RobotStatus.MOVING and
-                            other_robot.next_vertex is not None):
-                            # Check if robots are moving towards each other
-                            if (other_robot.current_vertex == next_vertex and 
-                                other_robot.next_vertex == current):
-                                is_blocked = True
-                                break
+                        if other_robot.id != robot.id:
+                            # If other robot is at our next vertex
+                            if other_robot.current_vertex == next_vertex:
+                                # If other robot is moving or waiting
+                                if other_robot.status in [RobotStatus.MOVING, RobotStatus.WAITING]:
+                                    # If other robot's next vertex is our current vertex
+                                    if other_robot.next_vertex == current:
+                                        # Higher ID robot should wait
+                                        if robot.id > other_robot.id:
+                                            is_blocked = True
+                                            break
+                                else:  # Other robot is stationary
+                                    is_blocked = True
+                                    break
+                            # If other robot is moving to our next vertex
+                            elif (other_robot.status == RobotStatus.MOVING and 
+                                  other_robot.next_vertex == next_vertex):
+                                # Higher ID robot should wait
+                                if robot.id > other_robot.id:
+                                    is_blocked = True
+                                    break
                     
                     if is_blocked:
                         if robot.id not in self.waiting_robots:

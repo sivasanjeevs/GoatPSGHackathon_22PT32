@@ -102,27 +102,7 @@ class FleetManager:
             self.logger.warning(f"Failed to assign task - {msg}")
             return False
             
-        # Get currently blocked edges from moving robots and track robot positions
-        blocked_edges = set()
-        blocked_vertices = set()
-        robot_positions = {}  # Track all robot positions and their status
-        for other_robot in self.robots.values():
-            if other_robot.id != robot_id:
-                robot_positions[other_robot.id] = {
-                    'vertex': other_robot.current_vertex,
-                    'status': other_robot.status,
-                    'next_vertex': other_robot.next_vertex
-                }
-                if (other_robot.status == RobotStatus.MOVING and 
-                    other_robot.current_vertex is not None and 
-                    other_robot.next_vertex is not None):
-                    edge = (min(other_robot.current_vertex, other_robot.next_vertex),
-                           max(other_robot.current_vertex, other_robot.next_vertex))
-                    blocked_edges.add(edge)
-                if other_robot.status not in [RobotStatus.MOVING, RobotStatus.WAITING]:
-                    blocked_vertices.add(other_robot.current_vertex)
-            
-        # Get all possible paths
+        # Get all possible paths first
         alternative_paths = self.nav_graph.get_alternative_paths(robot.current_vertex, destination)
         if not alternative_paths:
             msg = f"No path found to vertex {destination}"
@@ -130,72 +110,99 @@ class FleetManager:
             self.logger.warning(f"Failed to assign task - {msg}")
             return False
             
-        # Find the shortest path first
+        # Get currently blocked edges and vertices
+        blocked_edges = set()
+        blocked_vertices = set()
+        moving_robots = {}  # Track moving robots and their paths
+        
+        for other_robot in self.robots.values():
+            if other_robot.id != robot_id:
+                # Track moving robots and their paths
+                if other_robot.status == RobotStatus.MOVING and other_robot.next_vertex is not None:
+                    moving_robots[other_robot.id] = {
+                        'current': other_robot.current_vertex,
+                        'next': other_robot.next_vertex,
+                        'path': self.traffic_manager.reserved_paths.get(other_robot.id, [])
+                    }
+                    edge = (min(other_robot.current_vertex, other_robot.next_vertex),
+                           max(other_robot.current_vertex, other_robot.next_vertex))
+                    blocked_edges.add(edge)
+                # Track stationary robots
+                elif other_robot.status not in [RobotStatus.MOVING, RobotStatus.WAITING]:
+                    blocked_vertices.add(other_robot.current_vertex)
+        
+        # Find shortest path first
         shortest_path = min(alternative_paths, key=len)
         shortest_length = len(shortest_path)
         
-        # Check if shortest path is blocked but might become available soon
-        shortest_path_blocked = False
-        blocking_robots = set()
-        
-        # Check each vertex and edge in the shortest path
-        for i in range(len(shortest_path) - 1):
-            current = shortest_path[i]
-            next_vertex = shortest_path[i + 1]
-            
-            # Check if any robot is blocking this part of the path
-            for other_id, pos_info in robot_positions.items():
-                # Check if robot is on current vertex or edge
-                if pos_info['vertex'] == current or pos_info['vertex'] == next_vertex:
-                    shortest_path_blocked = True
-                    blocking_robots.add(other_id)
-        
-        # Score each path based on blockages and length
+        # Score and evaluate each path
         best_path = None
         best_score = float('inf')
-        for possible_path in alternative_paths:
-            if len(possible_path) < 2:
+        
+        for path in alternative_paths:
+            if len(path) < 2:
                 continue
                 
-            # Count number of blocked edges and vertices in this path
-            blocked_count = 0
-            for i in range(len(possible_path) - 1):
-                v1, v2 = possible_path[i], possible_path[i + 1]
-                edge = (min(v1, v2), max(v1, v2))
+            # Initialize path metrics
+            path_score = len(path)  # Base score is path length
+            is_blocked = False
+            has_collision = False
+            
+            # Check each segment of the path
+            for i in range(len(path) - 1):
+                current = path[i]
+                next_vertex = path[i + 1]
+                edge = (min(current, next_vertex), max(current, next_vertex))
+                
+                # Check for immediate blockages
+                if next_vertex in blocked_vertices:
+                    path_score += 100  # Heavy penalty for blocked vertices
+                    is_blocked = True
                 if edge in blocked_edges:
-                    blocked_count += 1
-                if possible_path[i] in blocked_vertices:
-                    blocked_count += 1
+                    path_score += 50   # Medium penalty for blocked edges
+                    is_blocked = True
+                
+                # Check for potential collisions with moving robots
+                for robot_info in moving_robots.values():
+                    robot_path = robot_info['path']
+                    if len(robot_path) > i:
+                        # Check if robots would meet at a vertex
+                        if robot_path[i] == next_vertex:
+                            has_collision = True
+                            path_score += 75  # Penalty for potential collision
+                
+            # Add length penalty if path is much longer than shortest
+            if len(path) > shortest_length * 1.5:
+                path_score += 150  # Heavy penalty for very long paths
             
-            # Score is based on path length and number of blockages
-            # Heavily penalize paths with blockages
-            score = len(possible_path) + (blocked_count * 100)
-            
-            # If this path is much longer than the shortest path, increase the penalty
-            if len(possible_path) > shortest_length * 1.5:  # If path is 50% longer than shortest
-                score += 200  # Add significant penalty
-            
-            if score < best_score and self.traffic_manager.reserve_path(robot_id, possible_path):
-                best_score = score
-                best_path = possible_path
+            # Try to reserve this path if it's better than current best
+            if path_score < best_score and not has_collision:
+                if self.traffic_manager.reserve_path(robot_id, path):
+                    best_path = path
+                    best_score = path_score
+                    # If this is a good path with no collisions, use it immediately
+                    if not is_blocked and len(path) <= shortest_length * 1.2:
+                        break
         
-        # If shortest path is blocked, assign it and make robot wait
-        if shortest_path_blocked and len(shortest_path) < (len(best_path) if best_path else float('inf')):
-            # Assign the shortest path even though it's blocked
-            if self.traffic_manager.reserve_path(robot_id, shortest_path):
-                robot.assign_task(shortest_path)
-                robot.wait()  # Make robot wait immediately
-                msg = f"Robot {robot_id} assigned path and waiting for robots {', '.join(map(str, blocking_robots))} to move"
-                self.gui.show_notification(msg)
-                self.logger.info(msg)
-                return True
-        
-        # If we found an unblocked path, use it
+        # If we found a valid path, use it
         if best_path is not None:
             if robot.assign_task(best_path):
                 msg = f"Robot {robot_id} assigned path to vertex {destination}"
                 self.logger.info(msg)
                 return True
+            
+        # If no good path found, try shortest path and wait if needed
+        if self.traffic_manager.reserve_path(robot_id, shortest_path):
+            robot.assign_task(shortest_path)
+            if any(v in blocked_vertices or (min(path[i], path[i+1]), max(path[i], path[i+1])) in blocked_edges 
+                  for i, v in enumerate(shortest_path[:-1])):
+                robot.wait()
+                msg = f"Robot {robot_id} taking shortest path and waiting when blocked"
+            else:
+                msg = f"Robot {robot_id} taking shortest path"
+            self.gui.show_notification(msg)
+            self.logger.info(msg)
+            return True
         
         msg = "Could not find a valid path to destination"
         self.gui.show_notification(msg)
