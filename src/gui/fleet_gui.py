@@ -30,6 +30,27 @@ class FleetGUI:
         self.screen = pygame.display.set_mode((width, height))
         pygame.display.set_caption("Fleet Management System")
         
+        # Store robots list and scroll info
+        self.robots = []
+        self.robot_list_height = 0
+        
+        # Scrolling parameters for robot list
+        self.robot_list_scroll_y = 0
+        self.robot_section_height = 200  # Maximum height for robot section
+        self.scroll_bar_width = 10
+        self.is_scrolling = False
+        self.scroll_start_y = 0
+        
+        # Load charging station image
+        try:
+            self.charging_img = pygame.image.load("gui/charge-removebg-preview.png")
+            # Scale the image to fit inside vertex circle (slightly smaller than vertex_radius)
+            scaled_size = 20  # Make it smaller to fit better inside vertex circle (radius is 20)
+            self.charging_img = pygame.transform.scale(self.charging_img, (scaled_size, scaled_size))
+        except pygame.error as e:
+            print(f"Warning: Could not load charging station image: {e}")
+            self.charging_img = None
+        
         # Navigation graph
         self.nav_graph = None
         
@@ -47,8 +68,8 @@ class FleetGUI:
         
         # Fonts - using sans-serif
         try:
-            self.font = pygame.font.SysFont('sans-serif', 24)
-            self.small_font = pygame.font.SysFont('sans-serif', 20)
+            self.font = pygame.font.SysFont('Mona Sans', 24)
+            self.small_font = pygame.font.SysFont('Mona Sans', 20)
         except:
             # Fallback to default font if sans-serif is not available
             self.font = pygame.font.Font(None, 24)
@@ -167,11 +188,10 @@ class FleetGUI:
         text_rect = text.get_rect(center=(screen_pos[0], screen_pos[1] - self.vertex_radius - 15))
         self.screen.blit(text, text_rect)
         
-        # For charging stations, add a lightning bolt symbol
-        if is_charger:
-            bolt_text = self.font.render("", True, self.TEXT_COLOR)
-            bolt_rect = bolt_text.get_rect(center=(screen_pos[0], screen_pos[1]))
-            self.screen.blit(bolt_text, bolt_rect)
+        # For charging stations, add the charging image
+        if is_charger and self.charging_img:
+            img_rect = self.charging_img.get_rect(center=(screen_pos[0], screen_pos[1]))
+            self.screen.blit(self.charging_img, img_rect)
             
     def draw_edge(self, start_pos: Tuple[float, float], end_pos: Tuple[float, float], 
                 is_blocked: bool = False):
@@ -255,50 +275,81 @@ class FleetGUI:
                                (battery_x + 1, battery_y + 1, level_width - 2, battery_height - 2))
         
     def draw_status_panel(self, robots: List[Robot]):
-        """Draw status panel showing robot information"""
-        # Draw panel background with gradient effect
-        panel_rect = pygame.Rect(self.graph_width, 0, self.panel_width, self.height)
-        pygame.draw.rect(self.screen, self.PANEL_BACKGROUND, panel_rect)
-        pygame.draw.line(self.screen, self.PANEL_BORDER, 
-                        (self.graph_width, 0), (self.graph_width, self.height), 2)
+        """Draw the status panel on the right side"""
+        # Update stored robots list and calculate list height
+        self.robots = robots
+        self.robot_list_height = len(robots) * (self.ITEM_SPACING + 35)
+        panel_width = 300
+        x = self.width - panel_width
+        y = 0
+        padding = 20
         
-        # Current Y position for drawing
-        y = self.PANEL_PADDING + 10
+        # Draw panel background
+        pygame.draw.rect(self.screen, (32, 34, 37), (x, y, panel_width, self.height))
         
-        # Draw main title with modern style
-        title = self.font.render("Robot Status", True, self.HEADING_COLOR)
-        title_rect = title.get_rect(midtop=(self.graph_width + self.panel_width // 2, y))
-        self.screen.blit(title, title_rect)
+        # Draw controls section at the top
+        controls_text = [
+            "Controls",
+            "Left Click Vertex - Spawn Robot",
+            "Left Click Robot - Select",
+            "Left Click other Vertex - Set Destination",
+            "Coloured Vertex - Charging Station"
+        ]
         
-        y += self.SECTION_SPACING + 10
+        y += padding
+        title_font = pygame.font.Font(None, 28)
+        text_font = pygame.font.Font(None, 20)
         
+        # Draw controls
+        for i, text in enumerate(controls_text):
+            if i == 0:  # Title
+                surface = title_font.render(text, True, (72, 176, 176))
+            else:  # Instructions
+                surface = text_font.render(text, True, (200, 200, 200))
+            self.screen.blit(surface, (x + padding, y))
+            y += 25
+        
+        y += padding  # Add space after controls
+        
+        # Draw separator line
+        pygame.draw.line(self.screen, self.PANEL_BORDER,
+                        (x + padding, y),
+                        (x + panel_width - padding, y), 1)
+        
+        y += self.SECTION_SPACING
+        
+        # Draw Robot Status title
+        title_surface = title_font.render("Robot Status", True, (72, 176, 176))
+        self.screen.blit(title_surface, (x + padding, y))
+        y += 40
+
         # Draw charging stations section
         section_title = self.font.render("Charging Stations", True, self.HEADING_COLOR)
-        self.screen.blit(section_title, (self.graph_width + self.PANEL_PADDING, y))
+        self.screen.blit(section_title, (x + padding, y))
         
         y += self.ITEM_SPACING
         # Draw charging station example
         pygame.gfxdraw.filled_circle(self.screen, 
-                                   self.graph_width + self.PANEL_PADDING + 10, 
+                                   x + padding + 10, 
                                    y + 8, 8, self.CHARGER_COLOR)
         pygame.gfxdraw.aacircle(self.screen, 
-                               self.graph_width + self.PANEL_PADDING + 10, 
+                               x + padding + 10, 
                                y + 8, 8, self.CHARGER_COLOR)
         legend_text = self.small_font.render("Vertex E, J", True, self.CONTENT_COLOR)
-        self.screen.blit(legend_text, (self.graph_width + self.CONTENT_INDENT, y))
+        self.screen.blit(legend_text, (x + self.CONTENT_INDENT, y))
         
         y += self.SECTION_SPACING
         
         # Draw separator line
         pygame.draw.line(self.screen, self.PANEL_BORDER,
-                        (self.graph_width + self.PANEL_PADDING, y),
-                        (self.width - self.PANEL_PADDING, y), 1)
+                        (x + padding, y),
+                        (x + panel_width - padding, y), 1)
         
         y += self.SECTION_SPACING
         
         # Draw waiting section
         waiting_title = self.font.render("Waiting Robots", True, self.HEADING_COLOR)
-        self.screen.blit(waiting_title, (self.graph_width + self.PANEL_PADDING, y))
+        self.screen.blit(waiting_title, (x + padding, y))
         
         y += self.ITEM_SPACING
         
@@ -308,31 +359,36 @@ class FleetGUI:
             for robot in waiting_robots:
                 waiting_text = f"Robot {robot.id}: waiting"
                 text = self.small_font.render(waiting_text, True, self.CONTENT_COLOR)
-                self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
+                self.screen.blit(text, (x + self.CONTENT_INDENT, y))
                 y += self.ITEM_SPACING
         else:
             text = self.small_font.render("No robots waiting", True, self.CONTENT_COLOR)
-            self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
+            self.screen.blit(text, (x + self.CONTENT_INDENT, y))
             y += self.ITEM_SPACING
         
         y += self.SECTION_SPACING
         
         # Draw separator line
         pygame.draw.line(self.screen, self.PANEL_BORDER,
-                        (self.graph_width + self.PANEL_PADDING, y),
-                        (self.width - self.PANEL_PADDING, y), 1)
+                        (x + padding, y),
+                        (x + panel_width - padding, y), 1)
         
         y += self.SECTION_SPACING
         
-        # Draw robots section
+        # Draw robots section title
         robots_title = self.font.render("Robots", True, self.HEADING_COLOR)
-        self.screen.blit(robots_title, (self.graph_width + self.PANEL_PADDING, y))
-        
+        self.screen.blit(robots_title, (x + padding, y))
         y += self.ITEM_SPACING + 10
         
-        # Draw robot status information with increased spacing
+        # Create a surface for the scrollable robot list
+        robot_list_height = max(self.robot_section_height, len(robots) * (self.ITEM_SPACING + 35))  # Height needed for all robots
+        robot_surface = pygame.Surface((panel_width - padding * 2, robot_list_height))
+        robot_surface.fill((32, 34, 37))  # Same as panel background
+        
+        # Draw robots on the surface
+        robot_y = 0
         for robot in robots:
-            # Draw robot status with color-coded indicators
+            # Draw status indicator
             status_color = {
                 RobotStatus.IDLE: (100, 100, 100),
                 RobotStatus.MOVING: (0, 255, 0),
@@ -342,27 +398,60 @@ class FleetGUI:
                 RobotStatus.BATTERY_DEAD: (255, 0, 0)
             }.get(robot.status, robot.color)
             
-            # Draw status indicator
-            pygame.gfxdraw.filled_circle(self.screen, 
-                                       self.graph_width + self.PANEL_PADDING + 10, 
-                                       y + 8, 6, status_color)
-            pygame.gfxdraw.aacircle(self.screen, 
-                                   self.graph_width + self.PANEL_PADDING + 10, 
-                                   y + 8, 6, status_color)
+            pygame.gfxdraw.filled_circle(robot_surface, 
+                                       10, 
+                                       robot_y + 8, 6, status_color)
+            pygame.gfxdraw.aacircle(robot_surface, 
+                                   10, 
+                                   robot_y + 8, 6, status_color)
             
             # Draw robot information
             info_text = f"Robot {robot.id}: {robot.status.value}"
             text = self.small_font.render(info_text, True, self.SUBHEADING_COLOR)
-            self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
+            robot_surface.blit(text, (self.CONTENT_INDENT - padding, robot_y))
             
-            # Draw battery level with more spacing
-            y += self.ITEM_SPACING - 5
+            # Draw battery level
+            robot_y += self.ITEM_SPACING - 5
             battery_text = f"Battery: {robot.battery_level:.1f}%"
             text = self.small_font.render(battery_text, True, self.CONTENT_COLOR)
-            self.screen.blit(text, (self.graph_width + self.CONTENT_INDENT, y))
+            robot_surface.blit(text, (self.CONTENT_INDENT - padding, robot_y))
             
-            y += self.ITEM_SPACING + 10  # Added extra spacing between robots
+            robot_y += self.ITEM_SPACING + 10
         
+        # Calculate scroll bar parameters
+        visible_height = self.robot_section_height
+        content_height = max(visible_height, robot_list_height)  # Ensure content_height is at least visible_height
+        max_scroll = max(0, content_height - visible_height)
+        
+        # Clamp scroll position
+        self.robot_list_scroll_y = max(0, min(self.robot_list_scroll_y, max_scroll))
+        
+        # Calculate visible portion parameters
+        visible_width = panel_width - padding * 2 - self.scroll_bar_width
+        visible_start = min(self.robot_list_scroll_y, content_height - visible_height)
+        visible_height = min(visible_height, content_height - visible_start)
+        
+        # Create a subsurface for the visible portion
+        if visible_height > 0 and visible_width > 0:
+            try:
+                visible_portion = robot_surface.subsurface((0, visible_start, visible_width, visible_height))
+                self.screen.blit(visible_portion, (x + padding, y))
+            except ValueError as e:
+                print(f"Warning: Could not create subsurface: {e}")
+        
+        # Draw scroll bar background
+        scroll_bar_bg = pygame.Rect(x + panel_width - padding - self.scroll_bar_width, 
+                                  y, self.scroll_bar_width, visible_height)
+        pygame.draw.rect(self.screen, (50, 50, 50), scroll_bar_bg)
+        
+        # Draw scroll bar only if there's content to scroll
+        if content_height > visible_height:
+            scroll_height = max(20, min(visible_height, visible_height * visible_height / content_height))
+            scroll_pos = y + (visible_start * visible_height / content_height)
+            scroll_bar = pygame.Rect(x + panel_width - padding - self.scroll_bar_width,
+                                   scroll_pos, self.scroll_bar_width, scroll_height)
+            pygame.draw.rect(self.screen, (100, 100, 100), scroll_bar)
+
     def show_notification(self, message: str):
         """Show a notification message in the status panel"""
         # Don't show waiting notifications at the top
@@ -388,10 +477,38 @@ class FleetGUI:
                 actions.append({"type": "quit"})
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:  # Left click
-                    actions.append({
-                        "type": "click",
-                        "pos": event.pos
-                    })
+                    # Check if click is in scroll bar area
+                    panel_x = self.width - self.panel_width
+                    scroll_bar_x = panel_x + self.panel_width - 40  # 20 padding on each side
+                    scroll_bar_y = 400  # Approximate Y position where robot list starts
+                    if (scroll_bar_x <= event.pos[0] <= scroll_bar_x + self.scroll_bar_width and
+                        scroll_bar_y <= event.pos[1] <= scroll_bar_y + self.robot_section_height):
+                        self.is_scrolling = True
+                        self.scroll_start_y = event.pos[1]
+                    else:
+                        actions.append({
+                            "type": "click",
+                            "pos": event.pos
+                        })
+            elif event.type == pygame.MOUSEBUTTONUP:
+                if event.button == 1:
+                    self.is_scrolling = False
+            elif event.type == pygame.MOUSEMOTION:
+                if self.is_scrolling:
+                    # Update scroll position
+                    dy = event.pos[1] - self.scroll_start_y
+                    self.robot_list_scroll_y += dy * 2  # Multiply by 2 for faster scrolling
+                    # Clamp scroll position
+                    max_scroll = max(0, self.robot_list_height - self.robot_section_height)
+                    self.robot_list_scroll_y = max(0, min(self.robot_list_scroll_y, max_scroll))
+                    self.scroll_start_y = event.pos[1]
+            elif event.type == pygame.MOUSEWHEEL:
+                # Handle mouse wheel scrolling
+                scroll_amount = event.y * 30  # Adjust scroll speed
+                self.robot_list_scroll_y -= scroll_amount
+                # Clamp scroll position
+                max_scroll = max(0, self.robot_list_height - self.robot_section_height)
+                self.robot_list_scroll_y = max(0, min(self.robot_list_scroll_y, max_scroll))
                     
         return actions
         

@@ -14432,3 +14432,470 @@
 2025-03-30 13:40:37,563 - INFO - Robot 1 moved: vertex 7 -> 1
 2025-03-30 13:40:38,473 - INFO - Spawned Robot 2 at vertex 9
 2025-03-30 13:40:45,975 - WARNING - Failed to assign task - Could not find a valid path to destination
+2025-03-30 13:54:58,395 - INFO - Fleet Management System initialized
+2025-03-30 13:54:58,400 - INFO - Navigation graph loaded from ../data/nav_graph3.json
+2025-03-30 15:24:41,912 - INFO - Fleet Management System initialized
+2025-03-30 15:24:41,924 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:24:44,616 - INFO - Spawned Robot 0 at vertex 3
+2025-03-30 15:24:46,039 - INFO - Spawned Robot 1 at vertex 6
+2025-03-30 15:24:47,373 - INFO - Spawned Robot 2 at vertex 1
+2025-03-30 15:24:50,056 - INFO - Robot 2 assigned path to vertex 0
+2025-03-30 15:24:51,053 - INFO - Robot 2 moved: vertex 1 -> 10
+2025-03-30 15:24:52,065 - INFO - Robot 2 status changed: moving -> task_complete
+2025-03-30 15:24:52,068 - INFO - Robot 2 moved: vertex 10 -> 0
+2025-03-30 15:24:54,843 - INFO - Robot 0 assigned path to vertex 10
+2025-03-30 15:24:55,827 - INFO - Robot 0 moved: vertex 3 -> 1
+2025-03-30 15:24:56,839 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 15:24:56,839 - INFO - Robot 0 moved: vertex 1 -> 10
+2025-03-30 15:25:38,040 - INFO - Fleet Management System initialized
+2025-03-30 15:25:38,044 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:25:44,122 - INFO - Spawned Robot 0 at vertex 11
+2025-03-30 15:25:46,381 - INFO - Robot 0 assigned path to vertex 8
+2025-03-30 15:25:46,473 - INFO - Spawned Robot 1 at vertex 8
+2025-03-30 15:25:47,365 - INFO - Robot 0 moved: vertex 11 -> 6
+2025-03-30 15:25:48,370 - INFO - Robot 0 moved: vertex 6 -> 7
+2025-03-30 15:25:49,372 - INFO - Robot 0 moved: vertex 7 -> 12
+2025-03-30 15:25:53,184 - INFO - Spawned Robot 2 at vertex 0
+2025-03-30 15:25:57,773 - INFO - Spawned Robot 3 at vertex 6
+2025-03-30 15:26:00,908 - INFO - Robot 3 assigned path to vertex 0
+2025-03-30 15:26:01,892 - INFO - Robot 3 moved: vertex 6 -> 7
+2025-03-30 15:26:16,616 - INFO - Fleet Management System initialized
+2025-03-30 15:26:16,633 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:26:18,642 - INFO - Spawned Robot 0 at vertex 8
+2025-03-30 15:26:20,138 - INFO - Spawned Robot 1 at vertex 11
+2025-03-30 15:26:22,816 - INFO - Robot 1 assigned path to vertex 12
+2025-03-30 15:26:23,810 - INFO - Robot 1 moved: vertex 11 -> 6
+2025-03-30 15:26:24,654 - INFO - Robot 0 assigned path to vertex 7
+2025-03-30 15:26:24,816 - INFO - Robot 1 moved: vertex 6 -> 7
+2025-03-30 15:26:25,638 - INFO - Robot 0 moved: vertex 8 -> 12
+2025-03-30 15:32:58,415 - INFO - Fleet Management System initialized
+2025-03-30 15:32:58,417 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:33:02,121 - INFO - Spawned Robot 0 at vertex 7
+2025-03-30 15:34:57,380 - INFO - Fleet Management System initialized
+2025-03-30 15:34:57,388 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:34:59,893 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 15:35:40,714 - INFO - Fleet Management System initialized
+2025-03-30 15:35:40,730 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:35:50,340 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 15:40:32,945 - INFO - Fleet Management System initialized
+2025-03-30 15:40:32,949 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:45:58,606 - INFO - Fleet Management System initialized
+2025-03-30 15:45:58,607 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:47:41,604 - INFO - Fleet Management System initialized
+2025-03-30 15:47:41,624 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:49:26,663 - INFO - Fleet Management System initialized
+2025-03-30 15:49:26,686 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:50:41,279 - INFO - Fleet Management System initialized
+2025-03-30 15:50:41,290 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:52:39,933 - INFO - Fleet Management System initialized
+2025-03-30 15:52:39,935 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 15:53:24,579 - INFO - Fleet Management System initialized
+2025-03-30 15:53:24,596 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:00:00,325 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 16:00:01,463 - INFO - Spawned Robot 1 at vertex 7
+2025-03-30 16:00:05,408 - INFO - Robot 0 assigned path to vertex 1
+2025-03-30 16:00:06,395 - INFO - Robot 0 moved: vertex 6 -> 11
+2025-03-30 16:00:07,403 - INFO - Robot 0 moved: vertex 11 -> 5
+2025-03-30 16:00:08,420 - INFO - Robot 0 moved: vertex 5 -> 4
+2025-03-30 16:00:09,425 - INFO - Robot 0 moved: vertex 4 -> 0
+2025-03-30 16:00:10,427 - INFO - Robot 0 moved: vertex 0 -> 10
+2025-03-30 16:00:11,430 - INFO - Robot 0 status changed: moving -> task_complete
+2025-03-30 16:00:11,430 - INFO - Robot 0 moved: vertex 10 -> 1
+2025-03-30 16:03:32,073 - INFO - Fleet Management System initialized
+2025-03-30 16:03:32,081 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:03:44,597 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 16:09:26,853 - INFO - Fleet Management System initialized
+2025-03-30 16:09:26,855 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:10:06,041 - INFO - Fleet Management System initialized
+2025-03-30 16:10:06,053 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:10:52,054 - INFO - Fleet Management System initialized
+2025-03-30 16:10:52,060 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:11:24,507 - INFO - Fleet Management System initialized
+2025-03-30 16:11:24,538 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:12:03,131 - INFO - Fleet Management System initialized
+2025-03-30 16:12:03,134 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:12:18,458 - INFO - Fleet Management System initialized
+2025-03-30 16:12:18,459 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:12:43,884 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 16:12:45,118 - INFO - Spawned Robot 1 at vertex 7
+2025-03-30 16:12:46,559 - INFO - Spawned Robot 2 at vertex 1
+2025-03-30 16:12:47,879 - INFO - Spawned Robot 3 at vertex 3
+2025-03-30 16:12:48,954 - INFO - Spawned Robot 4 at vertex 2
+2025-03-30 16:12:50,023 - INFO - Spawned Robot 5 at vertex 8
+2025-03-30 16:13:05,058 - INFO - Robot 1 assigned path to vertex 5
+2025-03-30 16:13:06,045 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 16:15:11,836 - INFO - Fleet Management System initialized
+2025-03-30 16:15:11,858 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:15:33,313 - INFO - Fleet Management System initialized
+2025-03-30 16:15:33,318 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:26:13,853 - INFO - Fleet Management System initialized
+2025-03-30 16:26:13,860 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:26:21,637 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 16:26:23,439 - INFO - Spawned Robot 1 at vertex 1
+2025-03-30 16:26:25,213 - INFO - Robot 1 assigned path to vertex 7
+2025-03-30 16:26:26,199 - INFO - Robot 1 moved: vertex 1 -> 3
+2025-03-30 16:26:27,203 - INFO - Robot 1 moved: vertex 3 -> 2
+2025-03-30 16:26:28,202 - INFO - Robot 1 moved: vertex 2 -> 9
+2025-03-30 16:26:29,204 - INFO - Robot 1 moved: vertex 9 -> 8
+2025-03-30 16:26:30,204 - INFO - Robot 1 moved: vertex 8 -> 12
+2025-03-30 16:26:31,214 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 16:26:31,214 - INFO - Robot 1 moved: vertex 12 -> 7
+2025-03-30 16:26:34,382 - INFO - Robot 1 assigned path to vertex 9
+2025-03-30 16:26:35,378 - INFO - Robot 1 moved: vertex 7 -> 12
+2025-03-30 16:26:36,378 - INFO - Robot 1 moved: vertex 12 -> 8
+2025-03-30 16:26:37,382 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 16:26:37,382 - INFO - Robot 1 moved: vertex 8 -> 9
+2025-03-30 16:26:37,399 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:37,400 - INFO - Robot 1 status changed: task_complete -> charging
+2025-03-30 16:26:39,654 - INFO - Robot 1 status changed: charging -> task_complete
+2025-03-30 16:26:39,670 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,690 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,705 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,725 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,742 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,759 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,776 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,794 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,811 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,828 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,845 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,861 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,877 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,894 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,910 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,926 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,942 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,958 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,974 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:39,990 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,006 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,022 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,038 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,054 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,071 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,087 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,104 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,121 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,137 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,154 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,172 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,188 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,204 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,221 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,238 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,254 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,272 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,289 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,306 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,322 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,338 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,356 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,372 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,389 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,405 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,422 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,439 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,455 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,472 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,491 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,508 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,525 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,542 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,559 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,576 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,593 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,610 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,627 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,643 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,660 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,676 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,694 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,711 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,728 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,744 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,761 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,778 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,794 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,812 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,828 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,844 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,862 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,878 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,894 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,912 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,928 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,943 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,959 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,976 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:40,992 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,009 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,025 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,041 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,057 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,074 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,090 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,106 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,122 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,138 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,155 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,174 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,191 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,209 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,226 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,243 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,260 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,277 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,293 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,312 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,335 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,353 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,375 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,394 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,415 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,437 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,457 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,474 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,494 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,514 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,532 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,549 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,569 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,588 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,605 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,624 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,641 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,659 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,676 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,694 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,711 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,728 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,744 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,761 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,777 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,796 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,812 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,830 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,846 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,863 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,880 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,897 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,914 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,930 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,947 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,964 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,981 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:41,999 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,018 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,035 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,055 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,073 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,092 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,111 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,129 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,148 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,164 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,187 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,207 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,222 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,241 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,257 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,277 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,295 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,313 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,332 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,350 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,372 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,389 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,408 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,428 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,445 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,463 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,479 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,495 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,511 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,528 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,544 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,561 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,577 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,594 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,610 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,628 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,644 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,661 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,677 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,693 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,709 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,725 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,741 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,759 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,775 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,793 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,809 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,827 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,844 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,861 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,878 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,902 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,921 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,937 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,954 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,971 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:42,987 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,005 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,022 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,037 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,054 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,070 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,087 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,103 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,123 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,139 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,156 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,172 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,189 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,204 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,222 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,240 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,255 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,272 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,289 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,305 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,322 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,345 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,362 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,379 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,397 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,414 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,431 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,448 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,467 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,483 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,501 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,520 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,538 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,556 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,575 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,593 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,610 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,627 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,643 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,660 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,678 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,696 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,718 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,736 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,754 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,771 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,787 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,808 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,824 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,841 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,857 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,875 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,892 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,909 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,926 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,944 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,962 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,978 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:43,994 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,013 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,029 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,048 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,065 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,084 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,100 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,158 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,202 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,281 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,318 - INFO - Robot 1 started charging at vertex 9
+2025-03-30 16:26:44,353 - INFO - Robot 1 assigned path to vertex 3
+2025-03-30 16:26:45,326 - INFO - Robot 1 moved: vertex 9 -> 2
+2025-03-30 16:26:46,335 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 16:26:46,335 - INFO - Robot 1 moved: vertex 2 -> 3
+2025-03-30 16:27:35,459 - INFO - Fleet Management System initialized
+2025-03-30 16:27:35,509 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:28:10,175 - INFO - Fleet Management System initialized
+2025-03-30 16:28:10,188 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:28:43,104 - INFO - Fleet Management System initialized
+2025-03-30 16:28:43,117 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:33:28,779 - INFO - Fleet Management System initialized
+2025-03-30 16:33:28,784 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:33:40,416 - INFO - Fleet Management System initialized
+2025-03-30 16:33:40,428 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:35:20,996 - INFO - Fleet Management System initialized
+2025-03-30 16:35:21,002 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:37:11,865 - INFO - Fleet Management System initialized
+2025-03-30 16:37:11,870 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:37:13,657 - INFO - Spawned Robot 0 at vertex 7
+2025-03-30 16:37:14,798 - INFO - Spawned Robot 1 at vertex 3
+2025-03-30 16:37:16,401 - INFO - Spawned Robot 2 at vertex 1
+2025-03-30 16:37:17,835 - INFO - Spawned Robot 3 at vertex 11
+2025-03-30 16:37:19,552 - INFO - Robot 3 assigned path to vertex 0
+2025-03-30 16:37:20,549 - INFO - Robot 3 moved: vertex 11 -> 5
+2025-03-30 16:37:21,191 - INFO - Spawned Robot 4 at vertex 6
+2025-03-30 16:37:21,552 - INFO - Robot 3 moved: vertex 5 -> 4
+2025-03-30 16:37:22,469 - INFO - Spawned Robot 5 at vertex 11
+2025-03-30 16:37:22,565 - INFO - Robot 3 status changed: moving -> task_complete
+2025-03-30 16:37:22,566 - INFO - Robot 3 moved: vertex 4 -> 0
+2025-03-30 16:37:24,769 - INFO - Spawned Robot 6 at vertex 12
+2025-03-30 16:39:57,209 - INFO - Fleet Management System initialized
+2025-03-30 16:39:57,220 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:40:57,723 - INFO - Fleet Management System initialized
+2025-03-30 16:40:57,726 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:41:46,606 - INFO - Fleet Management System initialized
+2025-03-30 16:41:46,628 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:41:49,682 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 16:41:50,721 - INFO - Spawned Robot 1 at vertex 7
+2025-03-30 16:41:51,867 - INFO - Spawned Robot 2 at vertex 12
+2025-03-30 16:41:53,020 - INFO - Spawned Robot 3 at vertex 3
+2025-03-30 16:41:54,495 - INFO - Spawned Robot 4 at vertex 1
+2025-03-30 16:41:55,643 - INFO - Spawned Robot 5 at vertex 10
+2025-03-30 16:44:06,899 - INFO - Fleet Management System initialized
+2025-03-30 16:44:06,903 - INFO - Navigation graph loaded from ../data/nav_graph1.json
+2025-03-30 16:44:16,844 - INFO - Spawned Robot 0 at vertex 12
+2025-03-30 16:44:17,829 - INFO - Spawned Robot 1 at vertex 7
+2025-03-30 16:44:18,955 - INFO - Spawned Robot 2 at vertex 6
+2025-03-30 16:44:19,920 - INFO - Spawned Robot 3 at vertex 11
+2025-03-30 16:44:21,024 - INFO - Spawned Robot 4 at vertex 5
+2025-03-30 16:44:22,180 - INFO - Spawned Robot 5 at vertex 3
+2025-03-30 16:44:32,838 - INFO - Robot 4 assigned path to vertex 0
+2025-03-30 16:44:33,833 - INFO - Robot 4 moved: vertex 5 -> 4
+2025-03-30 16:44:34,844 - INFO - Robot 4 status changed: moving -> task_complete
+2025-03-30 16:44:34,845 - INFO - Robot 4 moved: vertex 4 -> 0
+2025-03-30 16:44:37,019 - INFO - Robot 4 assigned path to vertex 1
+2025-03-30 16:44:38,004 - INFO - Robot 4 moved: vertex 0 -> 10
+2025-03-30 16:44:39,016 - INFO - Robot 4 status changed: moving -> task_complete
+2025-03-30 16:44:39,016 - INFO - Robot 4 moved: vertex 10 -> 1
+2025-03-30 16:44:58,864 - INFO - Spawned Robot 6 at vertex 2
+2025-03-30 16:45:02,858 - INFO - Spawned Robot 7 at vertex 4
+2025-03-30 16:45:04,188 - INFO - Spawned Robot 8 at vertex 0
+2025-03-30 16:45:06,019 - INFO - Robot 7 assigned path to vertex 5
+2025-03-30 16:45:06,997 - INFO - Robot 7 status changed: moving -> task_complete
+2025-03-30 16:45:06,998 - INFO - Robot 7 moved: vertex 4 -> 5
+2025-03-30 16:45:19,911 - INFO - Robot 8 assigned path to vertex 10
+2025-03-30 16:45:20,903 - INFO - Robot 8 status changed: moving -> task_complete
+2025-03-30 16:45:20,904 - INFO - Robot 8 moved: vertex 0 -> 10
+2025-03-30 16:45:28,144 - INFO - Robot 6 assigned path to vertex 8
+2025-03-30 16:45:29,133 - INFO - Robot 6 moved: vertex 2 -> 9
+2025-03-30 16:45:30,148 - INFO - Robot 6 status changed: moving -> task_complete
+2025-03-30 16:45:30,148 - INFO - Robot 6 moved: vertex 9 -> 8
+2025-03-30 16:46:21,765 - INFO - Fleet Management System initialized
+2025-03-30 16:46:21,776 - INFO - Navigation graph loaded from ../data/nav_graph2.json
+2025-03-30 16:46:25,224 - INFO - Spawned Robot 0 at vertex 10
+2025-03-30 16:46:26,304 - INFO - Spawned Robot 1 at vertex 13
+2025-03-30 16:46:27,248 - INFO - Spawned Robot 2 at vertex 0
+2025-03-30 16:46:29,981 - INFO - Robot 2 assigned path to vertex 2
+2025-03-30 16:46:30,964 - INFO - Robot 2 moved: vertex 0 -> 1
+2025-03-30 16:46:31,972 - INFO - Robot 2 status changed: moving -> task_complete
+2025-03-30 16:46:31,973 - INFO - Robot 2 moved: vertex 1 -> 2
+2025-03-30 16:47:25,193 - INFO - Fleet Management System initialized
+2025-03-30 16:47:25,197 - INFO - Navigation graph loaded from ../data/nav_graph3.json
+2025-03-30 16:47:28,202 - INFO - Spawned Robot 0 at vertex 6
+2025-03-30 16:47:29,733 - INFO - Spawned Robot 1 at vertex 1
+2025-03-30 16:47:31,965 - INFO - Robot 1 assigned path to vertex 2
+2025-03-30 16:47:32,952 - INFO - Robot 1 status changed: moving -> task_complete
+2025-03-30 16:47:32,953 - INFO - Robot 1 moved: vertex 1 -> 2
+2025-03-30 16:47:33,087 - INFO - Spawned Robot 2 at vertex 4
+2025-03-30 16:47:35,597 - INFO - Spawned Robot 3 at vertex 1
+2025-03-30 16:47:38,645 - WARNING - Failed to assign task - Could not find a valid path to destination
